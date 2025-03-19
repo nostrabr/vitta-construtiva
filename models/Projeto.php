@@ -9,9 +9,8 @@ class Projeto extends Model {
     protected $fillable = [
         'capa_projeto',
         'imagem_info_projeto',
-        'texto_info_projeto',
         'descricao',
-        'titulo_projetos',
+        'identificador',
         'area_atuacao_id'
     ];
     public $timestamps = false;
