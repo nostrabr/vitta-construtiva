@@ -24,7 +24,7 @@
             </div>
 
             <div class='mb-3'>
-              <label for='area-atuacao-thumb' class="small mb-0">Thumb (Máx 2mb 900x500)*</label>
+              <label for='area-atuacao-thumb' class="small mb-0">Capa da área de atuação (Máx 2mb 900x500)*</label>
               <input type='file' id='area-atuacao-thumb' name='area-atuacao-thumb' class='form-control' required>
             </div>
 

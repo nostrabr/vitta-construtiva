@@ -128,6 +128,17 @@ class AreaAtuacaoRepository {
 
     // deletando imagens do projeto
     public static function deleteImgProjeto($id) {
+        $pastaDestino = __DIR__ . "/../admin/assets/imagens/arquivos/areas-atuacao/";
+        
+        $res = ImagensProjeto::where('id', $id)->first();
+
+        // deletando imagem
+        $filePathDesk = $pastaDestino . $res['imagem'];
+        if (file_exists($filePathDesk)) {
+            unlink($filePathDesk);
+        }
+
+        // deletando imagem do banco
         $res = ImagensProjeto::where('id', $id)->delete();
 
         if($res) {
@@ -154,11 +165,23 @@ class AreaAtuacaoRepository {
                     $img->delete();
                 }
             }
-            $projeto->delete();
-            return true;
         } else {
             return false;
         }
+
+        // deletando capa e imagem sobre do projeto
+        $filePathDeskCapa = $pastaDestino . $projeto['capa_projeto'];
+        $filePathDeskImg = $pastaDestino . $projeto['imagem_info_projeto'];
+        if (file_exists($filePathDeskCapa)) {
+            unlink($filePathDeskCapa);
+        }
+        if (file_exists($filePathDeskImg)) {
+            unlink($filePathDeskImg);
+        }
+
+        $projeto->delete();
+
+        return true;
     }
 
     // deletando área de atuação e seus projetos e imagens de projetos relacionados
@@ -181,10 +204,32 @@ class AreaAtuacaoRepository {
                             $img->delete();
                         }
                     }
+
+                    $filePathDeskCapa = $pastaDestino . $projeto['capa_projeto'];
+                    $filePathDeskImg = $pastaDestino . $projeto['imagem_info_projeto'];
+                    if (file_exists($filePathDeskCapa)) {
+                        unlink($filePathDeskCapa);
+                    }
+                    if (file_exists($filePathDeskImg)) {
+                        unlink($filePathDeskImg);
+                    }
+
                     $projeto->delete();
                 }
             }
+
+            // deletando capa e banner da area
+            $filePathDeskBanner = $pastaDestino . $area['banner'];
+            $filePathDeskCapa = $pastaDestino . $area['capa'];
+            if (file_exists($filePathDeskBanner)) {
+                unlink($filePathDeskBanner);
+            }
+            if (file_exists($filePathDeskCapa)) {
+                unlink($filePathDeskCapa);
+            }
+
             $area->delete();
+            
             return true;
         } else {
             return false;

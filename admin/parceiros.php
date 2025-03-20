@@ -44,6 +44,10 @@
     <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
 
+    <!-- MODAL ADD PARCEIRO -->
+    <?php include_once "modulos-admin/contents/parceiros/modais/add-parceiro.php"; ?>
+    <!-- MODAL ADD PARCEIRO -->
+
 
 
     <!--BOOTSTRAP JS-->

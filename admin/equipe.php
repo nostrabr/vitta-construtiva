@@ -6,7 +6,7 @@
 
    // buscar equipe
    use Repositories\EquipeRepository;
-   $equipe = EquipeRepository::getAll();
+   $equipes = EquipeRepository::getAll();
 ?>
 
 <!DOCTYPE html>
@@ -43,6 +43,10 @@
     <!-- MODAL AVISOS -->
     <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
+
+    <!-- MODAL ADD EQUIPE -->
+    <?php include_once "modulos-admin/contents/equipe/modais/add-equipe.php"; ?>
+    <!-- MODAL ADD EQUIPE -->
 
 
 

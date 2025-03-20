@@ -44,6 +44,13 @@
     <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
 
+    <!-- MODAL ADD DEPOIMENTO TEXTO -->
+    <?php include_once "modulos-admin/contents/depoimentos/modais/add-depoimento-texto.php"; ?>
+    <!-- MODAL ADD DEPOIMENTO TEXTO -->
+
+    <!-- MODAL ADD DEPOIMENTO VÍDEO -->
+    <?php include_once "modulos-admin/contents/depoimentos/modais/add-depoimento-video.php"; ?>
+    <!-- MODAL ADD DEPOIMENTO VÍDEO -->
 
 
     <!--BOOTSTRAP JS-->

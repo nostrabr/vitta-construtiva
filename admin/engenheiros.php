@@ -44,6 +44,11 @@
     <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
 
+    <!-- MODAL ADD ENGENHEIRO -->
+    <?php include_once "modulos-admin/contents/engenheiros/modais/add-engenheiro.php"; ?>
+    <!-- MODAL ADD ENGENHEIRO -->
+
+
 
 
     <!--BOOTSTRAP JS-->

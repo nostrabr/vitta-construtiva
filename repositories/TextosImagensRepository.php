@@ -8,4 +8,19 @@ class TextosImagensRepository {
     public static function getAll() {
         return TextosImagens::where('id', 1)->first();
     }
+
+    // atualizando gif
+    public static function updateGif($data) {
+        return TextosImagens::where('id', 1)->update($data);
+    }
+
+    // atualizando texto home
+    public static function updateTextoHome($data) {
+        return TextosImagens::where('id', 1)->update($data);
+    }
+
+    // atualizando texto quem somos
+    public static function updateTextoQuemSomos($data) {
+        return TextosImagens::where('id', 1)->update($data);
+    }
 }

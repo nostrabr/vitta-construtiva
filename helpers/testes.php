@@ -3,4 +3,5 @@
 namespace Repositories;
 
 require __DIR__ . '/../config/config.php';
-use Repositories\AreaAtuacaoRepository;
+use Repositories\TextosImagensRepository;
+echo json_encode(TextosImagensRepository::getAll());
