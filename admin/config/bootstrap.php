@@ -1,7 +1,7 @@
 <?php
 
 // importando o autoload
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 // importando o db
-require __DIR__.'/../../config/db.php';
+require __DIR__.'/db.php';

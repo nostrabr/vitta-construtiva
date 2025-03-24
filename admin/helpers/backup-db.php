@@ -1,7 +1,7 @@
 <?php
 
 
-$databaseFile = __DIR__.'/../../db/db.sqlite';
+$databaseFile = __DIR__.'/../db/db.sqlite';
 $backupDir = __DIR__.'/../backups/db/';
 $backupFile = $backupDir . 'backup_' . date('d-m-Y') . '.sqlite';
 
