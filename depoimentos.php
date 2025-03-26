@@ -1,5 +1,13 @@
 <?php
     include_once __DIR__ . '/config/config.php';
+
+    // buscar contatos
+    use Repositories\ContatosRepository;
+    $contatos = ContatosRepository::getContatos();
+
+    // buscar areas de atuação
+    use Repositories\AreaAtuacaoRepository;
+    $areas_atuacao = AreaAtuacaoRepository::getAll();
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +19,9 @@
 </head>
 <body>
 
-
-
+    <!-- MENU -->
+    <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
+    <!-- MENU -->
 
 
 

@@ -11,6 +11,7 @@
     font-family: "Archivo", sans-serif;
 }
 
+/* FONTS */
 .font-antic-didone {
     font-family: "Antic Didone", serif !important;
 }  
@@ -32,7 +33,12 @@ a:hover{
 }
 
 
+.active-link{
+    color: #BD937A !important;
+}
 
+
+/* PALHETA DE CORES */
 .text-0{
     color: #B96544 !important;
 }
@@ -86,6 +92,12 @@ a:hover{
 }
 .bg-cinza-4{
     background-color: #D9D9D6 !important;
+}
+.text-black-2{
+    color: #110F0A !important;
+}
+.bg-black-2{
+    background-color: #110F0A !important;
 }
 
 
