@@ -1,9 +1,52 @@
-<?php
-    include_once './config/config.php';
-?>
+<style>
+    #container-login{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-login #container-content{
+        background-color: rgba(0, 0, 0, 0.374);
+        width: 35%;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 50px;
+        color: white;
+    }
+
+    #logo-login{
+        width: 70%;
+        margin-bottom: 25px;
+    }
 
 
-<link rel="stylesheet" href="<?php echo $base_url ?>modulos-admin/login/css/style.css">
+
+    @media(min-width:1500px){
+        #container-login #container-content{
+            width: 25%;
+            padding: 50px 50px;
+        }
+
+        #logo-login{
+            width: 70%;
+            margin-bottom: 25px;
+        }
+    }
+    @media(max-width:992px){
+        #container-login #container-content{
+            width: 90%;
+            padding: 40px 20px;
+        }
+    }
+</style>
 
 
 

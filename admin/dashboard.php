@@ -4,8 +4,6 @@
    //verifica auth;
    include_once './helpers/verifica-auth.php';
 
-   require 'config/bootstrap.php';
-
     //pegando contatos
     use Repositories\ContatosRepository;
     $contatos = ContatosRepository::getContatos();

@@ -63,7 +63,7 @@
                             <input type="hidden" name="id" value="<?= $area['id']; ?>">
                             <input type="hidden" name="nome-img" value="<?= $area['capa']; ?>">
                             <div class='w-100'>
-                              <label for='att-area-atuacao-thumb' class="small mb-0">Thumb*</label>
+                              <label for='att-area-atuacao-thumb' class="small mb-0">Capa*</label>
                               <input type='file' id='att-area-atuacao-thumb' name='att-area-atuacao-thumb' class='form-control' required>
                             </div>
                             <div class="container-img-preview">

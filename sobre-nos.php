@@ -25,7 +25,7 @@
 
 
     <!-- SCROLL ANIMATION -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="<?= $base_url; ?>assets/dependencias/anima-scroll/aos.js"></script>
     <script>AOS.init()</script>
 
     <!-- BOOTSTRAP -->

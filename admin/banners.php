@@ -45,7 +45,7 @@
     <!-- MODAL AVISOS -->
 
     <!-- MODAL BANNERS -->
-    <?php include_once "modulos-admin/modal-add-banner/index.php"; ?>
+    <?php include_once "modulos-admin/contents/banners/modais/add-banner.php"; ?>
     <!-- MODAL BANNERS -->
 
 

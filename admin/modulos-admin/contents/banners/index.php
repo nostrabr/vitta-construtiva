@@ -80,7 +80,7 @@
 
 <!-- banner quem somos -->
 <section class="w-100 mb-5 pb-4" style="overflow-x: auto;">
-    <h6 class="mb-3">Atualizar banner da página Quem somos</h6>
+    <h6 class="mb-3">Atualizar banner da página Sobre nós</h6>
 
     <!-- header -->
     <div class="container-banner row py-3">
@@ -97,8 +97,8 @@
         <div class="col-2 align-self-center">1-</div>
         <div class="col-3 align-self-center"> <div class="container-desktop-banner"> <img src="<?php echo $base_url ?>assets/imagens/arquivos/banners/<?= $banners[0]['banner_quem_somos_desktop']; ?>"> </div> </div>
         <div class="col-3 align-self-center"> <div class="container-mobile-banner"> <img src="<?php echo $base_url ?>assets/imagens/arquivos/banners/<?= $banners[0]['banner_quem_somos_mobile']; ?>"> </div> </div>
-        <div class="col-2 align-self-center"> <a href="../quem-somos.php" target="_blank">Ver no site</a> </div>
-        <div class="col-2 text-end align-self-center"> <button class="btn-edit-banner" onclick="inserirIdModalAddBanner('banner_quem_somos_desktop','banner_quem_somos_mobile', '<?= $banners[0]['banner_quem_somos_desktop']; ?>', '<?= $banners[0]['banner_quem_somos_mobile']; ?>', 'Quem Somos')" data-bs-toggle="modal" data-bs-target="#modalBanner"><i class="fas fa-edit fs-3"></i></button> </div>
+        <div class="col-2 align-self-center"> <a href="../sobre-nos.php" target="_blank">Ver no site</a> </div>
+        <div class="col-2 text-end align-self-center"> <button class="btn-edit-banner" onclick="inserirIdModalAddBanner('banner_quem_somos_desktop','banner_quem_somos_mobile', '<?= $banners[0]['banner_quem_somos_desktop']; ?>', '<?= $banners[0]['banner_quem_somos_mobile']; ?>', 'Sobre nós')" data-bs-toggle="modal" data-bs-target="#modalBanner"><i class="fas fa-edit fs-3"></i></button> </div>
     </div>
     <!-- content -->
 </section>

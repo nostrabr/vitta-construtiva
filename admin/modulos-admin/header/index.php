@@ -10,13 +10,6 @@
 <meta property="og:description" content="<?php echo $descri_site ?>">
 <meta property="og:url" content="<?php echo $base_url ?>">
 
-<!-- SUMMERNOTE -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
-
 <!-- FAVICON -->
 <link rel="icon" href="<?php echo $base_url ?>assets/imagens/favicon-admin/favicon-admin.png">
 
