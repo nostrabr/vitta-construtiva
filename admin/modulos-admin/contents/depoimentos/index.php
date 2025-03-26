@@ -81,7 +81,7 @@
 
                                 <div class='w-100'>
                                   <label for='att-foto' class="mb-0 small">Foto*</label>
-                                  <input type='file' id='att-foto' name='att-foto' class='form-control' required>
+                                  <input type='file' accept=".png, .jpg, .jpeg" id='att-foto' name='att-foto' class='form-control' required>
                                 </div>
                                 <div class="container-preview-img ms-3">
                                     <img src='<?= $base_url ?>assets/imagens/arquivos/depoimentos/<?= $depoimento['foto']; ?>'>
@@ -179,5 +179,13 @@
 
 
 <script>
+document.getElementById('att-foto').addEventListener('change', function (event) {
+    const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+    const file = event.target.files[0];
 
+    if (file && !allowedTypes.includes(file.type)) {
+        alert('Formato de arquivo não permitido. Apenas PNG, JPG e JPEG são aceitos.');
+        event.target.value = ''; // Limpa o input
+    }
+});
 </script>

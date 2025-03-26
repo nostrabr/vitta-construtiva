@@ -8,6 +8,10 @@
     // buscar areas de atuação
     use Repositories\AreaAtuacaoRepository;
     $areas_atuacao = AreaAtuacaoRepository::getAll();
+
+    // buscar banners
+    use Repositories\BannersRepository;
+    $banners = BannersRepository::getBanners();
 ?>
 
 <!DOCTYPE html>
@@ -23,9 +27,13 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- BANNER -->
+    <?php include_once  __DIR__ .'/modulos/banner-home/index.php'; ?>
+    <!-- BANNER -->
 
 
 
+    
 
     <!-- SCROLL ANIMATION -->
     <script src="<?= $base_url; ?>assets/dependencias/anima-scroll/aos.js"></script>
