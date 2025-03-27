@@ -17,12 +17,12 @@
 
             <div class='mb-3'>
               <label for='capa-projeto' class="small mb-0">Capa do projeto (Máx 2mb 1000x700)*</label>
-              <input type='file' id='capa-projeto' name='capa-projeto' class='form-control' required>
+              <input type='file' accept=".png, .jpg, .jpeg" id='capa-projeto' name='capa-projeto' class='form-control' required>
             </div>
 
             <div class='mb-3'>
               <label for='imagem-info' class="small mb-0">Imagem sobre (Máx 2mb 800x600)*</label>
-              <input type='file' id='imagem-info' name='imagem-info' class='form-control' required>
+              <input type='file' accept=".png, .jpg, .jpeg" id='imagem-info' name='imagem-info' class='form-control' required>
             </div>
 
             <div class='mb-3'>
@@ -32,7 +32,7 @@
 
             <div class='mb-3'>
               <label for='images-projeto' class="small mb-0">Imagem do projeto (Opcional)</label>
-              <input type='file' id='imagens-projeto' name='imagens-projeto[]' class='form-control' multiple>
+              <input type='file' accept=".png, .jpg, .jpeg" id='imagens-projeto' name='imagens-projeto[]' class='form-control' multiple>
             </div>
 
           </div>
@@ -44,3 +44,25 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  document.getElementById('capa-projeto').addEventListener('change', function (event) {
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      const file = event.target.files[0];
+  
+      if (file && !allowedTypes.includes(file.type)) {
+          alert('Formato de arquivo não permitido. Apenas PNG, JPG e JPEG são aceitos.');
+          event.target.value = ''; // Limpa o input
+      }
+  });
+  document.getElementById('imagem-info').addEventListener('change', function (event) {
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      const file = event.target.files[0];
+  
+      if (file && !allowedTypes.includes(file.type)) {
+          alert('Formato de arquivo não permitido. Apenas PNG, JPG e JPEG são aceitos.');
+          event.target.value = ''; // Limpa o input
+      }
+  });
+</script>

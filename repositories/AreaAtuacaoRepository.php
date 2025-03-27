@@ -28,6 +28,8 @@ class AreaAtuacaoRepository {
             $res = AreaAtuacao::where('id', $id)->update(['banner'=> $img]);
         } else if($tipo == 'capa') {
             $res = AreaAtuacao::where('id', $id)->update(['capa' => $img]);
+        } else if($tipo == 'marca') {
+            $res = AreaAtuacao::where('id', $id)->update(['marca_dagua' => $img]);
         }
 
         if($res) {
@@ -218,14 +220,18 @@ class AreaAtuacaoRepository {
                 }
             }
 
-            // deletando capa e banner da area
+            // deletando capa, banner e marca dagua da area
             $filePathDeskBanner = $pastaDestino . $area['banner'];
             $filePathDeskCapa = $pastaDestino . $area['capa'];
+            $filePathDeskMarca = $pastaDestino . $area['marca_dagua'];
             if (file_exists($filePathDeskBanner)) {
                 unlink($filePathDeskBanner);
             }
             if (file_exists($filePathDeskCapa)) {
                 unlink($filePathDeskCapa);
+            }
+            if (file_exists($filePathDeskMarca)) {
+                unlink($filePathDeskMarca);
             }
 
             $area->delete();

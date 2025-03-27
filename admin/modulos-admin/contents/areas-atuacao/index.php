@@ -64,7 +64,7 @@
                             <input type="hidden" name="nome-img" value="<?= $area['capa']; ?>">
                             <div class='w-100'>
                               <label for='att-area-atuacao-thumb' class="small mb-0">Capa*</label>
-                              <input type='file' id='att-area-atuacao-thumb' name='att-area-atuacao-thumb' class='form-control' required>
+                              <input type='file' accept=".png, .jpg, .jpeg" id='att-area-atuacao-thumb' name='att-area-atuacao-thumb' class='form-control' required>
                             </div>
                             <div class="container-img-preview">
                                 <img src='<?= $base_url ?>assets/imagens/arquivos/areas-atuacao/<?= $area['capa']; ?>'>
@@ -72,15 +72,28 @@
                             <button type="submit" class="ms-2 py-2 btn btn-sm btn-success">Atualizar</button>
                         </form>
 
-                        <form class="mb-5 pb-5 border-bottom d-flex align-items-end justify-content-between" onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/areas-atuacao/php/att-area-atuacao-banner.php" method="post" enctype="multipart/form-data">
+                        <form class="mb-3 d-flex align-items-end justify-content-between" onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/areas-atuacao/php/att-area-atuacao-banner.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="id" value="<?= $area['id']; ?>">
                             <input type="hidden" name="nome-img" value="<?= $area['banner']; ?>">
                             <div class='w-100'>
                               <label for='att-area-atuacao-banner' class="small mb-0">Banner*</label>
-                              <input type='file' id='att-area-atuacao-banner' name='att-area-atuacao-banner' class='form-control' required>
+                              <input type='file' accept=".png, .jpg, .jpeg" id='att-area-atuacao-banner' name='att-area-atuacao-banner' class='form-control' required>
                             </div>
                             <div class="container-img-preview">
                                 <img src='<?= $base_url ?>assets/imagens/arquivos/areas-atuacao/<?= $area['banner']; ?>'>
+                            </div>
+                            <button type="submit" class="ms-2 py-2 btn btn-sm btn-success">Atualizar</button>
+                        </form>
+
+                        <form class="mb-5 pb-5 border-bottom d-flex align-items-end justify-content-between" onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/areas-atuacao/php/att-area-atuacao-marca-dagua.php" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="<?= $area['id']; ?>">
+                            <input type="hidden" name="nome-img" value="<?= $area['marca_dagua']; ?>">
+                            <div class='w-100'>
+                              <label for='att-area-atuacao-marca-dagua' class="small mb-0">Marca D'água*</label>
+                              <input type='file' accept=".png, .jpg, .jpeg" id='att-area-atuacao-marca-dagua' name='att-area-atuacao-marca-dagua' class='form-control' required>
+                            </div>
+                            <div class="container-img-preview">
+                                <img src='<?= $base_url ?>assets/imagens/arquivos/areas-atuacao/<?= $area['marca_dagua']; ?>'>
                             </div>
                             <button type="submit" class="ms-2 py-2 btn btn-sm btn-success">Atualizar</button>
                         </form>
@@ -123,7 +136,7 @@
                                                     <input type="hidden" name="nome-img" value="<?= $projeto['capa_projeto']; ?>">
                                                     <div class='w-100'>
                                                         <label for='att-capa-projeto' class="small mb-0">Capa projeto*</label>
-                                                        <input type='file' id='att-capa-projeto' name='att-capa-projeto' class='form-control' required>
+                                                        <input accept=".png, .jpg, .jpeg" type='file' id='att-capa-projeto' name='att-capa-projeto' class='form-control' required>
                                                     </div>
                                                     <div class="container-img-preview">
                                                         <img src='<?= $base_url ?>assets/imagens/arquivos/areas-atuacao/<?= $projeto['capa_projeto']; ?>'>
@@ -135,7 +148,7 @@
                                                     <input type="hidden" name="nome-img" value="<?= $projeto['imagem_info_projeto']; ?>">
                                                     <div class='w-100'>
                                                         <label for='att-imagem_info_projeto' class="small mb-0">Imagem sobre*</label>
-                                                        <input type='file' id='att-imagem_info_projeto' name='att-imagem_info_projeto' class='form-control' required>
+                                                        <input accept=".png, .jpg, .jpeg" type='file' id='att-imagem_info_projeto' name='att-imagem_info_projeto' class='form-control' required>
                                                     </div>
                                                     <div class="container-img-preview">
                                                         <img src='<?= $base_url ?>assets/imagens/arquivos/areas-atuacao/<?= $projeto['imagem_info_projeto']; ?>'>
@@ -150,7 +163,7 @@
                             
                                                         <label for='add-images-projeto' class="small mb-0">Imagem do projeto (Opcional)</label>
                                                         <div class="d-flex align-items-end">
-                                                            <input type='file' id='add-imagens-projeto' name='add-imagens-projeto[]' class='form-control' multiple required>
+                                                            <input accept=".png, .jpg, .jpeg" type='file' id='add-imagens-projeto' name='add-imagens-projeto[]' class='form-control' multiple required>
                                                             <button type="submit" class="btn btn-sm ms-2 py-2 btn-success">Adicionar</button>
                                                         </div>
                                                         <span class="form-text mb-3">Clique na imagem para deletar</span>

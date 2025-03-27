@@ -6,17 +6,16 @@ use Repositories\AreaAtuacaoRepository;
 // pegando dados do do form
 $id = $_POST['id'];
 $nomeImg = $_POST['nome-img'];
-$imagem = '';
+$area_atuacao_marca_dagua = '';
 
 $pastaDestino = __DIR__ . "/../../../../assets/imagens/arquivos/areas-atuacao/";
 
-
-if (isset($_FILES['att-imagem_info_projeto']) && $_FILES['att-imagem_info_projeto']['error'] != UPLOAD_ERR_NO_FILE) {
+if (isset($_FILES['att-area-atuacao-marca-dagua']) && $_FILES['att-area-atuacao-marca-dagua']['error'] != UPLOAD_ERR_NO_FILE) {
     $hash = bin2hex(random_bytes(3));
-    $original_img = $hash . basename($_FILES['att-imagem_info_projeto']['name']);
+    $original_img = $hash . basename($_FILES['att-area-atuacao-marca-dagua']['name']);
     $caminhoDestino = $pastaDestino . $original_img;
 
-    move_uploaded_file($_FILES['att-imagem_info_projeto']['tmp_name'], $caminhoDestino);
+    move_uploaded_file($_FILES['att-area-atuacao-marca-dagua']['tmp_name'], $caminhoDestino);
 
     $extensao = strtolower(pathinfo($caminhoDestino, PATHINFO_EXTENSION));
 
@@ -30,8 +29,8 @@ if (isset($_FILES['att-imagem_info_projeto']) && $_FILES['att-imagem_info_projet
             $img = imagecreatefromjpeg($caminhoDestino);
         }
 
-        $imagem = 'upload-' . $hash . ".webp";
-        $caminhoWebP = $pastaDestino . $imagem;
+        $area_atuacao_marca_dagua = 'upload-' . $hash . ".webp";
+        $caminhoWebP = $pastaDestino . $area_atuacao_marca_dagua;
 
         imagewebp($img, $caminhoWebP, 80);
         imagedestroy($img);
@@ -46,7 +45,7 @@ if (file_exists($filePathDesk)) {
 }
 
 // salvar
-$res = AreaAtuacaoRepository::updateImagemProjeto($imagem, $id, 'imagem');
+$res = AreaAtuacaoRepository::upodateImgAreaAtuacao($area_atuacao_marca_dagua, $id, 'marca');
 
 
 if($res) {

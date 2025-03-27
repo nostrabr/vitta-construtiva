@@ -8,6 +8,7 @@ class AreaAtuacao extends Model {
     protected $table = 'areas_atuacao';
     protected $fillable = [
         'capa',
+        'marca_dagua',
         'titulo',
         'banner',
         'descricao',

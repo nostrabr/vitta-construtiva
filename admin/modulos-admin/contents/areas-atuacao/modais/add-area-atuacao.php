@@ -25,12 +25,17 @@
 
             <div class='mb-3'>
               <label for='area-atuacao-thumb' class="small mb-0">Capa da área de atuação (Máx 2mb 900x500)*</label>
-              <input type='file' id='area-atuacao-thumb' name='area-atuacao-thumb' class='form-control' required>
+              <input type='file' accept=".png, .jpg, .jpeg" id='area-atuacao-thumb' name='area-atuacao-thumb' class='form-control' required>
             </div>
 
             <div class='mb-3'>
               <label for='area-atuacao-banner' class="small mb-0">Banner (Máx 2mb 1920x1080)*</label>
-              <input type='file' id='area-atuacao-banner' name='area-atuacao-banner' class='form-control' required>
+              <input type='file' accept=".png, .jpg, .jpeg" id='area-atuacao-banner' name='area-atuacao-banner' class='form-control' required>
+            </div>
+
+            <div class='mb-3'>
+              <label for='area-atuacao-marca-dagua' class="small mb-0">Marca D'água (Máx 1mb - PNG)*</label>
+              <input type='file' accept=".png, .jpg, .jpeg" id='area-atuacao-marca-dagua' name='area-atuacao-marca-dagua' class='form-control' required>
             </div>
 
           </div>
@@ -42,3 +47,38 @@
     </div>
   </div>
 </div>
+
+
+
+
+<script>
+  document.getElementById('area-atuacao-thumb').addEventListener('change', function (event) {
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      const file = event.target.files[0];
+  
+      if (file && !allowedTypes.includes(file.type)) {
+          alert('Formato de arquivo não permitido. Apenas PNG, JPG e JPEG são aceitos.');
+          event.target.value = ''; // Limpa o input
+      }
+  });
+
+  document.getElementById('area-atuacao-banner').addEventListener('change', function (event) {
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      const file = event.target.files[0];
+  
+      if (file && !allowedTypes.includes(file.type)) {
+          alert('Formato de arquivo não permitido. Apenas PNG, JPG e JPEG são aceitos.');
+          event.target.value = ''; // Limpa o input
+      }
+  });
+
+  document.getElementById('area-atuacao-carca-dagua').addEventListener('change', function (event) {
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      const file = event.target.files[0];
+  
+      if (file && !allowedTypes.includes(file.type)) {
+          alert('Formato de arquivo não permitido. Apenas PNG, JPG e JPEG são aceitos.');
+          event.target.value = ''; // Limpa o input
+      }
+  });
+</script>

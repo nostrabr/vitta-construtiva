@@ -31,6 +31,9 @@
         const base_url = '<?= $base_url; ?>';
     </script>
 
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="<?= $base_url; ?>assets/dependencias/swiper/swiper.css">
+
     <!-- GLOBAL CSS -->
     <link rel="stylesheet" href="<?= $base_url; ?>assets/css/style.css">
 

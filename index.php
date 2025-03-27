@@ -12,6 +12,10 @@
     // buscar banners
     use Repositories\BannersRepository;
     $banners = BannersRepository::getBanners();
+
+    // buscar parceiros
+    use Repositories\ParceirosRepository;
+    $parceiros = ParceirosRepository::getAll();
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +34,16 @@
     <!-- BANNER -->
     <?php include_once  __DIR__ .'/modulos/banner-home/index.php'; ?>
     <!-- BANNER -->
+
+    <!-- ÁREA ATUAÇÃO -->
+    <?php include_once  __DIR__ .'/modulos/area-atuacao-home/index.php'; ?>
+    <!-- ÁREA ATUAÇÃO -->
+
+    <!-- NOSSOS PARCEIROS HOME -->
+    <?php include_once  __DIR__ .'/modulos/nossos-parceiros-home/index.php'; ?>
+    <!-- NOSSOS PARCEIROS HOME -->
+
+
 
 
 
