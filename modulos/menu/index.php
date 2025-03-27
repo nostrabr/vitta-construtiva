@@ -48,13 +48,13 @@
 
 
 <!-- desktop -->
-<div class="px-4 px-lg-0 container mx-auto d-flex justify-content-between align-items-center py-4">
+<div class="px-4 px-lg-0 container mx-auto d-flex justify-content-between align-items-center py-5">
     <a href="<?= $base_url; ?>"><img src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='logo' class='logo-menu'></a>
 
     <nav class="d-none d-lg-flex justify-content-center align-items-center">
-        <a href="<?= $base_url; ?>index.php" class="mx-3 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
-        <a href="<?= $base_url; ?>sobre-nos.php" class="mx-3 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
-        <div class="dropdown mx-3">
+        <a href="<?= $base_url; ?>index.php" class="mx-4 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
+        <a href="<?= $base_url; ?>sobre-nos.php" class="mx-4 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
+        <div class="dropdown mx-4">
             <a class="dropdown-toggle text-black-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 Áreas de atuação
             </a>
@@ -64,8 +64,8 @@
                 <?php } ?>
             </ul>
         </div>
-        <a href="<?= $base_url; ?>depoimentos.php" class="mx-3 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
-        <a href="<?= $base_url; ?>contato.php" class="mx-3 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
+        <a href="<?= $base_url; ?>depoimentos.php" class="mx-4 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
+        <a href="<?= $base_url; ?>contato.php" class="mx-4 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
 
         <a href="<?= $contatos['instagram']; ?>" target="_blank" class="ms-4"><img style="width: 20px;" src='<?= $base_url ?>assets/imagens/site/insta-menu.png'></a>
     </nav>

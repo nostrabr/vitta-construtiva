@@ -16,6 +16,10 @@
     // buscar parceiros
     use Repositories\ParceirosRepository;
     $parceiros = ParceirosRepository::getAll();
+
+    // buscar textos imagens
+    use Repositories\TextosImagensRepository;
+    $textos_imagens = TextosImagensRepository::getAll();
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +46,20 @@
     <!-- NOSSOS PARCEIROS HOME -->
     <?php include_once  __DIR__ .'/modulos/nossos-parceiros-home/index.php'; ?>
     <!-- NOSSOS PARCEIROS HOME -->
+    
+    <!-- SOBRE HOME -->
+    <?php include_once  __DIR__ .'/modulos/sobre-home/index.php'; ?>
+    <!-- SOBRE HOME -->
+
+    <!-- ENTRE EM CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/entre-em-contato/index.php'; ?>
+    <!-- ENTRE EM CONTATO -->
+
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
+
+
 
 
 
