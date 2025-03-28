@@ -57,7 +57,7 @@
 
                             <div class="w-100">
                               <label for='att-foto'>Foto*</label>
-                              <input type='file' id='att-foto' name='att-foto' class='form-control' required>
+                              <input type='file' accept=".png, .jpg, .jpeg" id='att-foto' name='att-foto' class='form-control' required>
                             </div>
                             <div class="ms-3 preview-img-engenheiro">
                                 <img src='<?= $base_url ?>assets/imagens/arquivos/engenheiros/<?= $engenheiro['foto']; ?>' alt='<?= $engenheiro['nome']; ?>'>

@@ -56,7 +56,7 @@
 
                             <div class="w-100">
                             <label for='att-texto'>Texto*</label>
-                            <textarea id='att-texto' name='att-texto' class='form-control' required><?= $equipe['texto']; ?></textarea>
+                            <textarea id='att-texto' rows="4" name='att-texto' class='form-control' required><?= $equipe['texto']; ?></textarea>
                             </div>
                             <button type="submit" class="btn btn-success btn-sm py-2 ms-2">Atualizar</button>
                         </form>
@@ -67,7 +67,7 @@
 
                             <div class="w-100">
                             <label for='att-foto'>Foto*</label>
-                            <input type='file' id='att-foto' name='att-foto' class='form-control' required>
+                            <input type='file' accept=".png, .jpg, .jpeg" id='att-foto' name='att-foto' class='form-control' required>
                             </div>
                             <div class="ms-3 preview-img-equipe">
                                 <img src='<?= $base_url ?>assets/imagens/arquivos/equipe/<?= $equipe['foto']; ?>' alt='<?= $equipe['nome']; ?>'>

@@ -5,6 +5,14 @@
     use Repositories\ContatosRepository;
     $contatos = ContatosRepository::getContatos();
 
+    // buscar banners
+    use Repositories\BannersRepository;
+    $banners = BannersRepository::getBanners();
+
+    // buscar depoimentos
+    use Repositories\DepoimentosRepository;
+    $depoimentos = DepoimentosRepository::getAll();
+
     // buscar areas de atuação
     use Repositories\AreaAtuacaoRepository;
     $areas_atuacao = AreaAtuacaoRepository::getAll();
@@ -23,8 +31,29 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- BANNER -->
+    <?php include_once  __DIR__ .'/modulos/banner-depoimento/index.php'; ?>
+    <!-- BANNER -->
+    
+    <!-- DEPOIMENTO CONTENT -->
+    <?php include_once  __DIR__ .'/modulos/depoimento-content/index.php'; ?>
+    <!-- DEPOIMENTO CONTENT -->
+
+    <!-- CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/entre-em-contato/index.php'; ?>
+    <!-- CONTATO -->
+
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
 
 
+
+
+
+
+
+    
 
     <!-- SCROLL ANIMATION -->
     <script src="<?= $base_url; ?>assets/dependencias/anima-scroll/aos.js"></script>

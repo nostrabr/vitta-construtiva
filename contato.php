@@ -5,6 +5,14 @@
     use Repositories\ContatosRepository;
     $contatos = ContatosRepository::getContatos();
 
+    // buscar endereços
+    use Repositories\EnderecoRepository;
+    $endereco = EnderecoRepository::getEndereco();
+
+    // buscar banners
+    use Repositories\BannersRepository;
+    $banners = BannersRepository::getBanners();
+
     // buscar areas de atuação
     use Repositories\AreaAtuacaoRepository;
     $areas_atuacao = AreaAtuacaoRepository::getAll();
@@ -19,9 +27,21 @@
 </head>
 <body>
 
+    <!-- LOADING -->
+    <?php include_once  __DIR__ .'/modulos/loading/index.php'; ?>
+    <!-- LOADING -->
+
     <!-- MENU -->
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
+    
+    <!-- CONTATO CONTENT -->
+    <?php include_once  __DIR__ .'/modulos/contato-content/index.php'; ?>
+    <!-- CONTATO CONTENT -->
+
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
 
 
 
@@ -29,10 +49,7 @@
 
 
 
-
-
-
-
+    
 
     <!-- SCROLL ANIMATION -->
     <script src="<?= $base_url; ?>assets/dependencias/anima-scroll/aos.js"></script>

@@ -5,6 +5,22 @@
     use Repositories\ContatosRepository;
     $contatos = ContatosRepository::getContatos();
 
+    // buscar banners
+    use Repositories\BannersRepository;
+    $banners = BannersRepository::getBanners();
+
+    // buscar engenheiros
+    use Repositories\EngenheirosRepository;
+    $engenheiros = EngenheirosRepository::getAll();
+
+    // buscar equipe
+    use Repositories\EquipeRepository;
+    $equipe = EquipeRepository::getAll();
+
+    // buscar textos imagens
+    use Repositories\TextosImagensRepository;
+    $textos_imagens = TextosImagensRepository::getAll();
+
     // buscar areas de atuação
     use Repositories\AreaAtuacaoRepository;
     $areas_atuacao = AreaAtuacaoRepository::getAll();
@@ -23,6 +39,29 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- BANNER -->
+    <?php include_once  __DIR__ .'/modulos/banner-sobre/index.php'; ?>
+    <!-- BANNER -->
+    
+    <!-- SOBRE CONTENT -->
+    <?php include_once  __DIR__ .'/modulos/sobre-content/index.php'; ?>
+    <!-- SOBRE CONTENT -->
+
+    <!-- EQUIPE -->
+    <?php include_once  __DIR__ .'/modulos/equipe/index.php'; ?>
+    <!-- EQUIPE -->
+
+    <!-- ENGENHEIROS -->
+    <?php include_once  __DIR__ .'/modulos/engenheiros/index.php'; ?>
+    <!-- ENGENHEIROS -->
+
+    <!-- CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/entre-em-contato/index.php'; ?>
+    <!-- CONTATO -->
+
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
 
 
 
@@ -30,9 +69,7 @@
 
 
 
-
-
-
+    
 
     <!-- SCROLL ANIMATION -->
     <script src="<?= $base_url; ?>assets/dependencias/anima-scroll/aos.js"></script>

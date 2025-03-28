@@ -20,12 +20,12 @@
 
             <div class='mb-3'>
               <label for='texto'>Texto*</label>
-              <textarea id='texto' name='texto' class='form-control' required></textarea>
+              <textarea id='texto' name='texto' rows="4" class='form-control' required></textarea>
             </div>
 
             <div class='mb-3'>
               <label for='foto'>Foto*</label>
-              <input type='file' id='foto' name='foto' placeholder='Foto*' class='form-control' required>
+              <input type='file' id='foto' accept=".png, .jpg, .jpeg" name='foto' placeholder='Foto*' class='form-control' required>
             </div>
 
           </div>
@@ -37,3 +37,17 @@
     </div>
   </div>
 </div>
+
+
+
+<script>
+  document.getElementById('foto').addEventListener('change', function (event) {
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      const file = event.target.files[0];
+  
+      if (file && !allowedTypes.includes(file.type)) {
+          alert('Formato de arquivo não permitido. Apenas PNG, JPG e JPEG são aceitos.');
+          event.target.value = ''; // Limpa o input
+      }
+  });
+</script>

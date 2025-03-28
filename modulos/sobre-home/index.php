@@ -47,7 +47,7 @@
 
             <div class="mb-5 mb-lg-0 col-12 col-lg-7 pe-0 ps-0 pe-lg-5">
                 <div class="container-img-sobre-home">
-                    <img src='<?= $base_url ?>assets/imagens/site/sobre-home.png'>
+                    <img src='<?= $base_url ?>admin/assets/imagens/arquivos/textos-imagens/<?= $textos_imagens['gif_sobre_home']; ?>'>
                 </div>
             </div>
 

@@ -48,7 +48,7 @@
 
 
 <!-- desktop -->
-<div class="px-4 px-lg-0 container mx-auto d-flex justify-content-between align-items-center py-5">
+<div class="px-4 px-lg-0 container mx-auto d-flex justify-content-between align-items-center py-4 py-lg-4 py-xxl-5">
     <a href="<?= $base_url; ?>"><img src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='logo' class='logo-menu'></a>
 
     <nav class="d-none d-lg-flex justify-content-center align-items-center">
