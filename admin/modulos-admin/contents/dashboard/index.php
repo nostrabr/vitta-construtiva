@@ -109,7 +109,7 @@
 
     <div class="mb-4 col-12 col-lg-6">
         <label for="link-maps" class="small">Link google maps*</label>
-        <input class="form-control text-uppercase" value="<?= $endereco->link_maps; ?>" type="text" required name="link-maps" id="link-maps">
+        <input class="form-control" value="<?= $endereco->link_maps; ?>" type="text" required name="link-maps" id="link-maps">
     </div>
 
     <div class="col-12">

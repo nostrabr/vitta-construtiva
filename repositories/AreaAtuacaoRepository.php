@@ -241,4 +241,15 @@ class AreaAtuacaoRepository {
             return false;
         }
     }
+
+
+    // pegando projeto por id
+    public static function getProjeto($id) {
+        return Projeto::with('imagensProjeto')->where('id', $id)->first();
+    }
+
+    // pegando area de atuacao por id
+    public static function getAreaAtuacao($id) {
+        return AreaAtuacao::with('projetos')->where('id', $id)->first();
+    }
 }

@@ -44,8 +44,8 @@
 
         <?php foreach ($depoimentos as $key => $depo) { ?>
             <?php if($depo['tipo'] == 'texto'){ ?>
-                <div class="col-12 col-lg-4 mb-3 px-2" style="background-color: #BD937A;">
-                    <div class="container-depoimento px-4 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-4 mb-3 px-2">
+                    <div style="background-color: #BD937A;" class="container-depoimento px-4 d-flex flex-column justify-content-center">
                         <div class="mt-4 d-flex justify-content-start align-items-center">
                             <div class="foto-perfil me-3"><img src='<?= $base_url ?>admin/assets/imagens/arquivos/depoimentos/<?= $depo['foto']; ?>'></div>
                             <div>

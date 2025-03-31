@@ -8,6 +8,27 @@
     // buscar areas de atuação
     use Repositories\AreaAtuacaoRepository;
     $areas_atuacao = AreaAtuacaoRepository::getAll();
+
+    // filtrar área de atuação
+    $id = $_GET['id'] ?? null;
+    $area_atuacao = null;
+
+    if(!$id) {
+        header('Location: '.$base_url.'index.php');
+        exit;
+    }
+
+    foreach ($areas_atuacao as $key => $area) {
+        if($area->id == $id) {
+            $area_atuacao = $area;
+            break;
+        }
+    } 
+
+    if(!$area_atuacao) {
+        header('Location: '.$base_url.'index.php');
+        exit;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +44,25 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- BANNER ÁREA ATUAÇÃO -->
+    <?php include_once  __DIR__ .'/modulos/banner-area-atuacao/index.php'; ?>
+    <!-- BANNER ÁREA ATUAÇÃO -->
+
+    <!-- TEXTO ÁREA ATUAÇÃO -->
+    <?php include_once  __DIR__ .'/modulos/texto-area-atuacao/index.php'; ?>
+    <!-- TEXTO ÁREA ATUAÇÃO -->
+
+    <!-- PROJETOS ÁREA ATUAÇÃO -->
+    <?php include_once  __DIR__ .'/modulos/projetos-area-atuacao/index.php'; ?>
+    <!-- PROJETOS ÁREA ATUAÇÃO -->
+
+    <!-- ENTRE EM CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/entre-em-contato/index.php'; ?>
+    <!-- ENTRE EM CONTATO -->
+
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
 
 
 

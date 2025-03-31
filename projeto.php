@@ -8,6 +8,18 @@
     // buscar areas de atuação
     use Repositories\AreaAtuacaoRepository;
     $areas_atuacao = AreaAtuacaoRepository::getAll();
+
+    $id = $_GET['id'] ?? null;
+    $idArea = $_GET['area'] ?? null;
+
+    // buscar projeto
+    if ($id && $idArea) {
+        $projeto = AreaAtuacaoRepository::getProjeto($id);
+        $areaProjeto = AreaAtuacaoRepository::getAreaAtuacao($idArea);
+    } else {
+        header('Location:' . $base_url . 'index.php');
+        exit;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +34,22 @@
     <!-- MENU -->
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
+
+    <!-- BANNER PROJETO -->
+    <?php include_once  __DIR__ .'/modulos/banner-projeto/index.php'; ?>
+    <!-- BANNER PROJETO -->
+     
+    <!-- CONTENT PROJETO -->
+    <?php include_once  __DIR__ .'/modulos/content-projeto/index.php'; ?>
+    <!-- CONTENT PROJETO -->
+
+    <!-- ENTRE EM CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/entre-em-contato/index.php'; ?>
+    <!-- ENTRE EM CONTATO -->
+
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
 
 
 
