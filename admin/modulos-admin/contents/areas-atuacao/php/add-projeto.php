@@ -8,7 +8,7 @@ $descricao = $_POST['descricao-projeto'];
 $area_id = $_POST['area_id'];
 $identificador = $_POST['identificador-projeto'];
 $capa = '';
-$imagem = '';
+$imagem_sobre = '';
 $imagens_projeto = '';
 
 $pastaDestino = __DIR__ . "/../../../../assets/imagens/arquivos/areas-atuacao/";
@@ -60,8 +60,8 @@ if (isset($_FILES['imagem-info']) && $_FILES['imagem-info']['error'] != UPLOAD_E
             $img = imagecreatefromjpeg($caminhoDestino);
         }
 
-        $capa = 'upload-' . $hash . ".webp";
-        $caminhoWebP = $pastaDestino . $capa;
+        $imagem_sobre = 'upload-' . $hash . ".webp";
+        $caminhoWebP = $pastaDestino . $imagem_sobre;
 
         imagewebp($img, $caminhoWebP, 80);
         imagedestroy($img);
@@ -71,7 +71,6 @@ if (isset($_FILES['imagem-info']) && $_FILES['imagem-info']['error'] != UPLOAD_E
 
 
 if (isset($_FILES['imagens-projeto']) && $_FILES['imagens-projeto']['error'][0] != UPLOAD_ERR_NO_FILE) {
-    $imagens_projeto = [];
     foreach ($_FILES['imagens-projeto']['tmp_name'] as $key => $tmp_name) {
         $hash = bin2hex(random_bytes(3));
         $original_img = $hash . basename($_FILES['imagens-projeto']['name'][$key]);
@@ -109,7 +108,7 @@ if (isset($_FILES['imagens-projeto']) && $_FILES['imagens-projeto']['error'][0] 
 $dados = [
     'descricao' => $descricao,
     'capa_projeto' => $capa,
-    'imagem_info_projeto' => $imagem,
+    'imagem_info_projeto' => $imagem_sobre,
     'identificador' => $identificador,
     'area_atuacao_id' => $area_id
 ];
