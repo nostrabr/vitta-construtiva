@@ -96,19 +96,22 @@
 
 
 <section class="py-5 px-4 px-lg-0">
+    <h1 class="d-none">Nossos projetos</h1>
+
+
     <div class="container-projetos-areas py-5 mx-auto text-center">
         <?php if($area_atuacao['titulo'] == 'Arquitetura'){ ?>
-            <h5 class="mb-3 fw-normal text-center" style="color: #3C3C3B;">Nos acompanhe</h5>
-            <a id="btn-arqui" class="d-inline-block mb-5 pb-5" href="https://www.instagram.com/shammaarquitetura/" target="_blank"><i class="fab fa-instagram me-2"></i> shammaarquitetura</a>
+            <h5 <?= $anima_scroll; ?> class="mb-3 fw-normal text-center" style="color: #3C3C3B;">Nos acompanhe</h5>
+            <a <?= $anima_scroll; ?> id="btn-arqui" class="d-inline-block mb-5 pb-5" href="https://www.instagram.com/shammaarquitetura/" target="_blank"><i class="fab fa-instagram me-2"></i> shammaarquitetura</a>
         <?php } ?>
 
-        <h3 style="color: #3C3C3B;"><?= $area_atuacao['titulo_projetos']; ?></h3>
-        <p class="confira-title" style="color: #97999B;">Confira nossos projetos de <?= $area_atuacao['titulo'] ?>.</p>
+        <h3 <?= $anima_scroll; ?> style="color: #3C3C3B;"><?= $area_atuacao['titulo_projetos']; ?></h3>
+        <p <?= $anima_scroll; ?> class="confira-title" style="color: #97999B;">Confira nossos projetos de <?= $area_atuacao['titulo'] ?>.</p>
 
         <!-- PROJETOS -->
         <div class="w-100 row mt-5">
             <?php foreach ($area_atuacao['projetos'] as $key => $projeto) { ?>
-                <div class="col-12 col-lg-4 p-1">
+                <div <?= $anima_scroll; ?> class="col-12 col-lg-4 p-1">
                     <a href="<?= $base_url; ?>projeto.php?id=<?= $projeto['id'] ?>&area=<?= $area_atuacao['id'] ?>">
                         <div class="container-capa-projeto">
                             <img src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['capa_projeto'] ?>' alt='<?= $projeto['titulo'] ?>'>
@@ -127,10 +130,10 @@
 <!-- RELACIONADOS -->
 <section class="py-5 px-4 px-lg-0">
     <div class="container-projetos-areas mx-auto py-5">
-        <h5 class="mb-5 fw-normal text-center">Veja também:</h5>
+        <h5 <?= $anima_scroll; ?> class="mb-5 fw-normal text-center">Veja também:</h5>
 
 
-        <div class="relacionados">
+        <div <?= $anima_scroll; ?> class="relacionados">
             <div class="swiper-wrapper">
 
                     <?php foreach ($areas_atuacao as $key => $area) { ?>

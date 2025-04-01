@@ -36,15 +36,18 @@
 
 
 <section class="py-5 px-4 px-lg-0">
+    <h1 class="d-none">Depoimentos</h1>
+
+
     <div class="container mx-auto py-5">
-        <h5 style="color: #3C3C3B;" class="fw-semibold mb-2 text-center">Depoimentos</h5>
-        <p style="color: #97999B;" class="text-center mb-5">Confira o que nossos clientes têm a dizer sobre a experiência contrutiva dos projetos que ajudaram a transformar seus sonhos.</p>
+        <h5 <?= $anima_scroll; ?> style="color: #3C3C3B;" class="fw-semibold mb-2 text-center">Depoimentos</h5>
+        <p <?= $anima_scroll; ?> style="color: #97999B;" class="text-center mb-5">Confira o que nossos clientes têm a dizer sobre a experiência contrutiva dos projetos que ajudaram a transformar seus sonhos.</p>
 
         <div class="row">
 
         <?php foreach ($depoimentos as $key => $depo) { ?>
             <?php if($depo['tipo'] == 'texto'){ ?>
-                <div class="col-12 col-lg-4 mb-3 px-2">
+                <div <?= $anima_scroll; ?> class="col-12 col-lg-4 mb-3 px-2">
                     <div style="background-color: #BD937A;" class="container-depoimento px-4 d-flex flex-column justify-content-center">
                         <div class="mt-4 d-flex justify-content-start align-items-center">
                             <div class="foto-perfil me-3"><img src='<?= $base_url ?>admin/assets/imagens/arquivos/depoimentos/<?= $depo['foto']; ?>'></div>
@@ -58,7 +61,7 @@
                     </div>
                 </div>
             <?php }else{ ?>
-                <div class="col-12 col-lg-4 mb-3 px-2">
+                <div <?= $anima_scroll; ?> class="col-12 col-lg-4 mb-3 px-2">
                     <div class="container-depoimento">
                     <iframe 
                         style="width: 100%; height: 100%;" 

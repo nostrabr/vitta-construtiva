@@ -143,7 +143,7 @@
                                                     </div>
                                                     <button type="submit" class="ms-2 py-2 btn btn-sm btn-success">Atualizar</button>
                                                 </form>
-                                                <form class="mb-5 d-flex align-items-end justify-content-between" onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/areas-atuacao/php/att-imagem-sobre.php" method="post" enctype="multipart/form-data">
+                                                <form class="mb-3 d-flex align-items-end justify-content-between" onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/areas-atuacao/php/att-imagem-sobre.php" method="post" enctype="multipart/form-data">
                                                     <input type="hidden" name="id" value="<?= $projeto['id']; ?>">
                                                     <input type="hidden" name="nome-img" value="<?= $projeto['imagem_info_projeto']; ?>">
                                                     <div class='w-100'>
@@ -152,6 +152,18 @@
                                                     </div>
                                                     <div class="container-img-preview">
                                                         <img src='<?= $base_url ?>assets/imagens/arquivos/areas-atuacao/<?= $projeto['imagem_info_projeto']; ?>'>
+                                                    </div>
+                                                    <button type="submit" class="ms-2 py-2 btn btn-sm btn-success">Atualizar</button>
+                                                </form>
+                                                <form class="mb-5 d-flex align-items-end justify-content-between" onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/areas-atuacao/php/att-banner-projeto.php" method="post" enctype="multipart/form-data">
+                                                    <input type="hidden" name="id" value="<?= $projeto['id']; ?>">
+                                                    <input type="hidden" name="nome-img" value="<?= $projeto['banner_projeto']; ?>">
+                                                    <div class='w-100'>
+                                                        <label for='att-banner-projeto' class="small mb-0">Banner Projeto*</label>
+                                                        <input accept=".png, .jpg, .jpeg" type='file' id='att-banner-projeto' name='att-banner-projeto' class='form-control' required>
+                                                    </div>
+                                                    <div class="container-img-preview">
+                                                        <img src='<?= $base_url ?>assets/imagens/arquivos/areas-atuacao/<?= $projeto['banner_projeto']; ?>'>
                                                     </div>
                                                     <button type="submit" class="ms-2 py-2 btn btn-sm btn-success">Atualizar</button>
                                                 </form>

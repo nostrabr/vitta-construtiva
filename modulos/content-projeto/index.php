@@ -84,34 +84,37 @@
 </style>
 
 
-<section class="py-5">
+<section class="py-5" style="overflow-x: hidden !important;">
+    <h1 class="d-none">Nossos projetos</h1>
+
+
     <div class="container-sobre-projeto mx-auto py-5 text-center">
-        <img style="width: 4em;" src='<?= $base_url ?>assets/imagens/site/icone-logo-projeto.png'>
+        <img <?= $anima_scroll; ?> style="width: 4em;" src='<?= $base_url ?>assets/imagens/site/icone-logo-projeto.png'>
 
         <div style="background-color: #BD937A;" class="w-100 px-lg-5">
             <div class="mt-5 rounded px-4 px-lg-5 py-5 row mx-0 mx-lg-5">
-                <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                <div <?= $anima_scroll; ?> class="col-12 col-lg-4 mb-5 mb-lg-0">
                     <div class="container-img-projeto-sobre">
                         <img src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['imagem_info_projeto'] ?>'>
                     </div>
                 </div>
-                <div class="font-text-info col-12 col-lg-8 text-start ps-0 pe-0 ps-lg-5" style="color: #3C3C3B;">
+                <div <?= $anima_scroll; ?> class="font-text-info col-12 col-lg-8 text-start ps-0 pe-0 ps-lg-5" style="color: #3C3C3B;">
                     <?= $projeto['descricao']; ?>
                 </div>
             </div>
         </div>
 
         <div class="mt-5 pt-4">
-            <h5 style="color: #3C3C3B;" class="mb-4 fw-normal">Compartilhe o projeto</h5>
-            <button id="copyLinkButton" class="me-3 icone-link-compartilhar border"><i class="me-2 fas fa-copy"></i> Copy Link</button>
-            <a href="https://www.instagram.com/" target="_blank" class="me-3 icone-link-compartilhar border"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/" target="_blank" class=" icone-link-compartilhar border"><i class="fab fa-facebook"></i></a>
+            <h5 <?= $anima_scroll; ?> style="color: #3C3C3B;" class="mb-4 fw-normal">Compartilhe o projeto</h5>
+            <button <?= $anima_scroll; ?> id="copyLinkButton" class="me-3 icone-link-compartilhar border"><i class="me-2 fas fa-copy"></i> Copy Link</button>
+            <a <?= $anima_scroll; ?> href="https://www.instagram.com/" target="_blank" class="me-3 icone-link-compartilhar border"><i class="fab fa-instagram"></i></a>
+            <a <?= $anima_scroll; ?> href="https://www.facebook.com/" target="_blank" class=" icone-link-compartilhar border"><i class="fab fa-facebook"></i></a>
         </div>
 
         <div class="mt-5 pt-4 px-4">
-            <h5 style="color: #3C3C3B;" class="mb-5 fw-normal">Projetos <strong>relacionados</strong></h5>
+            <h5 <?= $anima_scroll; ?> style="color: #3C3C3B;" class="mb-5 fw-normal">Projetos <strong>relacionados</strong></h5>
 
-            <div class="pro-relacionados">
+            <div <?= $anima_scroll; ?> class="pro-relacionados" style="overflow-x: hidden !important;">
                 <div class="swiper-wrapper">
 
                     <?php foreach ($areaProjeto['projetos'] as $key => $projeto) { ?>

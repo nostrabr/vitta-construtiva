@@ -26,6 +26,11 @@
             </div>
 
             <div class='mb-3'>
+              <label for='banner-projeto' class="small mb-0">Banner Projeto (Máx 2mb 1366x550)*</label>
+              <input type='file' accept=".png, .jpg, .jpeg" id='banner-projeto' name='banner-projeto' class='form-control' required>
+            </div>
+
+            <div class='mb-3'>
               <label for='descricao-projeto' class="small mb-0">Descrição sobre*</label>
               <textarea name="descricao-projeto" class='form-control' id="descricao-projeto" rows="3" required></textarea>
             </div>

@@ -104,6 +104,8 @@ class AreaAtuacaoRepository {
             $res = Projeto::where('id', $id)->update(['capa_projeto' => $img]);
         } else if($tipo == 'imagem') {
             $res = Projeto::where('id', $id)->update(['imagem_info_projeto' => $img]);
+        } else if($tipo == 'banner') {
+            $res = Projeto::where('id', $id)->update(['banner_projeto' => $img]);
         }
 
         if($res) {
@@ -174,11 +176,15 @@ class AreaAtuacaoRepository {
         // deletando capa e imagem sobre do projeto
         $filePathDeskCapa = $pastaDestino . $projeto['capa_projeto'];
         $filePathDeskImg = $pastaDestino . $projeto['imagem_info_projeto'];
+        $filePathDeskBanner = $pastaDestino . $projeto['banner_projeto'];
         if (file_exists($filePathDeskCapa)) {
             unlink($filePathDeskCapa);
         }
         if (file_exists($filePathDeskImg)) {
             unlink($filePathDeskImg);
+        }
+        if (file_exists($filePathDeskBanner)) {
+            unlink($filePathDeskBanner);
         }
 
         $projeto->delete();
@@ -209,11 +215,15 @@ class AreaAtuacaoRepository {
 
                     $filePathDeskCapa = $pastaDestino . $projeto['capa_projeto'];
                     $filePathDeskImg = $pastaDestino . $projeto['imagem_info_projeto'];
+                    $filePathDeskBanner = $pastaDestino . $projeto['banner_projeto'];
                     if (file_exists($filePathDeskCapa)) {
                         unlink($filePathDeskCapa);
                     }
                     if (file_exists($filePathDeskImg)) {
                         unlink($filePathDeskImg);
+                    }
+                    if (file_exists($filePathDeskBanner)) {
+                        unlink($filePathDeskBanner);
                     }
 
                     $projeto->delete();

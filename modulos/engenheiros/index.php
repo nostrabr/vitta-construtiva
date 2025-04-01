@@ -47,10 +47,13 @@
 
 
 <section class="py-5">
-    <div style="color: #3C3C3B;" class="container mx-auto py-5">
-        <h5 class="mb-5 pb-3 text-center">Conheça nossos <strong>engenheiros e arquitetos</strong></h5>
+    <h1 class="d-none">Nossos engenheiros</h1>
 
-        <div class="swiper">
+
+    <div style="color: #3C3C3B;" class="container mx-auto py-5">
+        <h5 <?= $anima_scroll; ?> class="mb-5 pb-3 text-center">Conheça nossos <strong>engenheiros e arquitetos</strong></h5>
+
+        <div <?= $anima_scroll; ?> class="swiper">
             <div class="swiper-wrapper">
 
                     <?php foreach ($engenheiros as $key => $eng) { ?>
@@ -85,6 +88,6 @@
                 slidesPerView: 4, // Quantidade de logos no desktop
             },
         },
-        loop: true, // Loop infinito
+        loop: false, // Loop infinito
     });
 </script>

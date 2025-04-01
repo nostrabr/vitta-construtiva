@@ -60,6 +60,8 @@
 
 
 <section class="py-5">
+    <h1 class="d-none">Nossos parceiros</h1>
+
     <div class="container mx-auto py-4">
             <!-- mobile -->
             <div class="d-block d-lg-none text-center mt-0 mb-5 pb-4">
@@ -67,9 +69,9 @@
             </div>
             <!-- mobile -->
 
-            <h5 class="text-center title-parceiros-home">Nossos <strong>Parceiros</strong></h5>
+            <h5 <?= $anima_scroll; ?> class="text-center title-parceiros-home">Nossos <strong>Parceiros</strong></h5>
 
-            <div class="swiper">
+            <div <?= $anima_scroll; ?> class="swiper">
                 <div class="swiper-wrapper">
                     <?php foreach ($parceiros as $key => $parceiro) { ?>
                         <div class="swiper-slide">

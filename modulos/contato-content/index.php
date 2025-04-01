@@ -89,48 +89,50 @@
 
 
 <section id="pag-contato" class="d-flex flex-column flex-lg-row">
-    <div id="banner-contato">
+    <h1 class="d-none">Nossos contatos</h1>
+
+    <div <?= $anima_scroll; ?> id="banner-contato">
         <img class="d-none d-lg-block" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_contato_desktop']; ?>'>
         <img class="d-block d-lg-none" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_contato_mobile']; ?>'>
     </div>
 
     <div id="contatos" class="ps-0 ps-lg-5 pt-5">
-        <h1 style="color: #110F0A;" class="font-im-fell mb-5">Fale Conosco</h1>
+        <h1 <?= $anima_scroll; ?> style="color: #110F0A;" class="font-im-fell mb-5">Fale Conosco</h1>
 
         <div style="color: #110F0A;" class="d-flex flex-column mb-5">
-            <h6 class="fw-semibold mb-4">Comercial p/ clientes</h6>
+            <h6 <?= $anima_scroll; ?> class="fw-semibold mb-4">Comercial p/ clientes</h6>
 
-            <a href="mailto:<?= $contatos['email_clientes']; ?>" style="color: #110F0A;" class="mb-2"><?= $contatos['email_clientes']; ?></a>
-            <a href="https://wa.me/<?= preg_replace("/[^0-9]/", "", $contatos['telefone_clientes']); ?>" style="color: #110F0A;"><?= $contatos['telefone_clientes']; ?></a>
+            <a <?= $anima_scroll; ?> href="mailto:<?= $contatos['email_clientes']; ?>" style="color: #110F0A;" class="mb-2"><?= $contatos['email_clientes']; ?></a>
+            <a <?= $anima_scroll; ?> href="https://wa.me/<?= preg_replace("/[^0-9]/", "", $contatos['telefone_clientes']); ?>" style="color: #110F0A;"><?= $contatos['telefone_clientes']; ?></a>
         </div>
 
         <div class="row">
             <div class="col-12 col-lg-6 pe-0 pe-lg-4">
                 <div style="color: #110F0A;" class="d-flex flex-column mb-5">
-                    <h6 class="fw-semibold mb-4">Fornecedores</h6>
+                    <h6 <?= $anima_scroll; ?> class="fw-semibold mb-4">Fornecedores</h6>
 
-                    <a href="mailto:<?= $contatos['email_fornecedor']; ?>" style="color: #110F0A;" class="mb-2"><?= $contatos['email_fornecedor']; ?></a>
-                    <a href="https://wa.me/<?= preg_replace("/[^0-9]/", "", $contatos['telefone_fornecedor']); ?>" style="color: #110F0A;"><?= $contatos['telefone_fornecedor']; ?></a>
+                    <a <?= $anima_scroll; ?> href="mailto:<?= $contatos['email_fornecedor']; ?>" style="color: #110F0A;" class="mb-2"><?= $contatos['email_fornecedor']; ?></a>
+                    <a <?= $anima_scroll; ?> href="https://wa.me/<?= preg_replace("/[^0-9]/", "", $contatos['telefone_fornecedor']); ?>" style="color: #110F0A;"><?= $contatos['telefone_fornecedor']; ?></a>
                 </div>
 
                 <div style="color: #110F0A;" class="d-flex flex-column align-items-start mb-5">
-                    <h6 class="fw-semibold mb-4">Onde estamos</h6>
+                    <h6 <?= $anima_scroll; ?> class="fw-semibold mb-4">Onde estamos</h6>
 
-                    <p style="color: #110F0A;" class="mb-3"><?= $endereco['endereco']; ?> - Bairro <?= $endereco['bairro']; ?>, <?= $endereco['cidade']; ?> - <?= $endereco['estado']; ?>, <?= $endereco['cep']; ?></p>
+                    <p <?= $anima_scroll; ?> style="color: #110F0A;" class="mb-3"><?= $endereco['endereco']; ?> - Bairro <?= $endereco['bairro']; ?>, <?= $endereco['cidade']; ?> - <?= $endereco['estado']; ?>, <?= $endereco['cep']; ?></p>
 
-                    <a href="<?= $endereco['link_maps']; ?>" class="button-2 d-inline"><i class="me-2 fas fa-map-marker-alt"></i> Ver no mapa</a>
+                    <a <?= $anima_scroll; ?> href="<?= $endereco['link_maps']; ?>" class="button-2 d-inline"><i class="me-2 fas fa-map-marker-alt"></i> Ver no mapa</a>
                 </div>
             </div>
 
             <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-                <h4 style="color: #110F0A;" class="mb-4">Possui alguma dúvida?</h4>
+                <h4 <?= $anima_scroll; ?> style="color: #110F0A;" class="mb-4">Possui alguma dúvida?</h4>
 
                 <form onsubmit="loading()" action="<?= $base_url; ?>helpers/enviar-email.php" class="d-flex flex-column align-items-start" id="form-contato" method="post"> 
-                    <input type="text" placeholder="Seu nome completo*" name="nome" class="input-form mb-3 w-100" required>
-                    <input type="email" placeholder="Seu e-mail*" name="email" class="input-form mb-3 w-100" required>
-                    <input type="text" placeholder="Escreva sua dúvida aqui*" name="duvida" class="input-form mb-3 w-100" required>
+                    <input <?= $anima_scroll; ?> type="text" placeholder="Seu nome completo*" name="nome" class="input-form mb-3 w-100" required>
+                    <input <?= $anima_scroll; ?> type="email" placeholder="Seu e-mail*" name="email" class="input-form mb-3 w-100" required>
+                    <input <?= $anima_scroll; ?> type="text" placeholder="Escreva sua dúvida aqui*" name="duvida" class="input-form mb-3 w-100" required>
 
-                    <button type="submit" class="btn-enviar mt-4">Enviar</button>
+                    <button <?= $anima_scroll; ?> type="submit" class="btn-enviar mt-4">Enviar</button>
                 </form>
             </div>
         </div>
@@ -145,3 +147,12 @@
         document.getElementById("loading").classList.add("d-flex")
     }
 </script>
+
+
+
+<?php
+    if(isset($_GET['success']) && $_GET['success'] == 'true'){
+        echo "<script>alert('Mensagem enviada com sucesso!');</script>";
+        echo "<script>history.pushState(null, null, window.location.href.split('?')[0]);</script>";
+    }
+?>

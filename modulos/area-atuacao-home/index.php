@@ -78,14 +78,16 @@
 
 
 <section class="py-5 px-4 px-lg-0">
+    <h1 class="d-none">Áreas de atuação</h1>
+
     <div class="container-areas mx-auto pt-5 pb-1 pt-lg-5 pb-lg-5">
         <div class="text-center"><img id="logo-area-atuacao" src='<?= $base_url ?>assets/imagens/site/logo-area-atuacao.png'></div>
 
-        <h6 class="fw-normal sub-title-area-home text-center mb-4">Conheça nossas <strong>áreas de atuação</strong></h6>
+        <h6 <?= $anima_scroll; ?> class="fw-normal sub-title-area-home text-center mb-4">Conheça nossas <strong>áreas de atuação</strong></h6>
         
         <div class="row">
             <?php foreach ($areas_atuacao as $key => $area) { ?>
-                <div class="col-12 col-lg-6 mb-5 mb-lg-3 p-0 px-lg-2" style="cursor: pointer;" onclick="window.location.href='<?= $base_url; ?>area-atuacao.php?id=<?= $area['id']; ?>'">
+                <div <?= $anima_scroll; ?> class="col-12 col-lg-6 mb-5 mb-lg-3 p-0 px-lg-2" style="cursor: pointer;" onclick="window.location.href='<?= $base_url; ?>area-atuacao.php?id=<?= $area['id']; ?>'">
                     <div onmouseleave="addBg('<?= $area['id']; ?>')" onmouseover="removerBg('<?= $area['id']; ?>')" style="background-image: url('<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area['capa']; ?>');" class="container-capa-area">
                         <div id="item-area-home-<?= $area['id']; ?>" class="bg-opacity w-100 position-relative h-100 d-flex align-items-center justify-content-center">
                             <h2 class="text-white"><?= $area['titulo']; ?></h2>

@@ -11,7 +11,8 @@ class Projeto extends Model {
         'imagem_info_projeto',
         'descricao',
         'identificador',
-        'area_atuacao_id'
+        'area_atuacao_id',
+        'banner_projeto'
     ];
     public $timestamps = false;
 

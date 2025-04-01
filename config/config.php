@@ -20,3 +20,7 @@ $base_url = $_ENV['BASE_URL'];
 // **********CONTET METATAGS**********
 $titulo_site = $_ENV['TITULO_SITE_SEO'];
 $descricao_site = $_ENV['DESCRICAO_SITE_SEO'];
+
+
+// **********ANIMA SCROLL**********
+$anima_scroll = 'data-aos="fade-up" data-aos-once="true"';

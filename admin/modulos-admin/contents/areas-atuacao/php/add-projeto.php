@@ -10,6 +10,7 @@ $identificador = $_POST['identificador-projeto'];
 $capa = '';
 $imagem_sobre = '';
 $imagens_projeto = '';
+$banner_projeto = '';
 
 $pastaDestino = __DIR__ . "/../../../../assets/imagens/arquivos/areas-atuacao/";
 
@@ -34,6 +35,34 @@ if (isset($_FILES['capa-projeto']) && $_FILES['capa-projeto']['error'] != UPLOAD
 
         $capa = 'upload-' . $hash . ".webp";
         $caminhoWebP = $pastaDestino . $capa;
+
+        imagewebp($img, $caminhoWebP, 80);
+        imagedestroy($img);
+        unlink($caminhoDestino);
+    }
+}
+
+if (isset($_FILES['banner-projeto']) && $_FILES['banner-projeto']['error'] != UPLOAD_ERR_NO_FILE) {
+    $hash = bin2hex(random_bytes(3));
+    $original_img = $hash . basename($_FILES['banner-projeto']['name']);
+    $caminhoDestino = $pastaDestino . $original_img;
+
+    move_uploaded_file($_FILES['banner-projeto']['tmp_name'], $caminhoDestino);
+
+    $extensao = strtolower(pathinfo($caminhoDestino, PATHINFO_EXTENSION));
+
+    if ($extensao == 'png' || $extensao == 'jpg' || $extensao == 'jpeg') {
+        if ($extensao == 'png') {
+            $img = imagecreatefrompng($caminhoDestino);
+            imagepalettetotruecolor($img);
+            imagealphablending($img, true);
+            imagesavealpha($img, true);
+        } elseif ($extensao == 'jpeg' || $extensao == 'jpg') {
+            $img = imagecreatefromjpeg($caminhoDestino);
+        }
+
+        $banner_projeto = 'upload-' . $hash . ".webp";
+        $caminhoWebP = $pastaDestino . $banner_projeto;
 
         imagewebp($img, $caminhoWebP, 80);
         imagedestroy($img);
@@ -110,7 +139,8 @@ $dados = [
     'capa_projeto' => $capa,
     'imagem_info_projeto' => $imagem_sobre,
     'identificador' => $identificador,
-    'area_atuacao_id' => $area_id
+    'area_atuacao_id' => $area_id,
+    'banner_projeto' => $banner_projeto
 ];
 
 // salvar
