@@ -55,7 +55,7 @@
 
     @media(min-width:1500px) {
         #pag-contato{
-            height: 70vh;
+            height: 90vh;
         }
         #form-contato{
             width: 60%;
