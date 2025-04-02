@@ -53,12 +53,24 @@
         width: 75%;
     }
 
-    @media(min-width:1500px) {
+    @media(min-width:1601px) {
         #pag-contato{
-            height: 90vh;
+            height:65vh;
         }
         #form-contato{
             width: 60%;
+        }
+    }
+
+    @media(max-width:1600px) {
+        #pag-contato{
+            height: 85vh;
+        }
+    }
+
+    @media(max-width:1300px) {
+        #pag-contato{
+            height: 115vh;
         }
     }
     
