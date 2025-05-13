@@ -14,12 +14,12 @@
 </style>
 
 
-<p class="mb-5 small">Nesta sessão você pode atualizar as <strong>áreas de atuação</strong> do seu site!</p>
+<p class="mb-5 small">Nesta sessão você pode atualizar os <strong>Projetos</strong> do seu site!</p>
 
 
 <!-- areas atuacao -->
 <section>
-    <button type="button" class="mb-5 btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#add-area-atuacao"> Adicionar área de atuação + </button> 
+    <button type="button" class="d-none mb-5 btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#add-area-atuacao"> Adicionar área de atuação + </button> 
 
     <?php foreach ($areas_atuacao as $key => $area) { ?>
         <div class="mb-4 item-acordion accordion">

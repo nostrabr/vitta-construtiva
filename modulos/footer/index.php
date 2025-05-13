@@ -13,7 +13,7 @@
 <section class="pt-5">
     <div class="container mx-auto mb-5">
         <div class="row">
-            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <div class="col-12 col-lg-8 mb-5 mb-lg-0">
                 <a href="<?= $base_url; ?>" class="d-none d-lg-block text-start"><img style="width: 160px;" src='<?= $base_url ?>assets/imagens/site/logo-footer-desktop.png'></a>
                 <a href="<?= $base_url; ?>" class="d-block d-lg-none text-center"><img style="width: 55%;" src='<?= $base_url ?>assets/imagens/site/logo-footer-mobile.png'></a>
             </div>
@@ -23,16 +23,9 @@
 
                 <a href="<?= $base_url; ?>" style="color: #54565A;" class="mb-3 small">Home</a>
                 <a href="<?= $base_url; ?>sobre-nos.php" style="color: #54565A;" class="mb-3 small">Quem Somos</a>
+                <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $areas_atuacao[0]['id']; ?>" style="color: #54565A;" class="mb-3 small"><?= $areas_atuacao[0]['titulo']; ?></a>
                 <a href="<?= $base_url; ?>depoimentos.php" style="color: #54565A;" class="mb-3 small">Depoimentos</a>
                 <a href="<?= $base_url; ?>contato.php" style="color: #54565A;" class="mb-3 small">Contato</a>
-            </div>
-
-            <div class="mb-5 mb-lg-0 col-12 col-lg-2 d-flex flex-column align-items-center align-items-lg-start justify-content-start">
-                <h6 style="color: #110F0A;" class="fw-semibold mb-4">Áreas de atuação</h6>
-
-                <?php foreach ($areas_atuacao as $key => $area) { ?>
-                    <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $area['id']; ?>" style="color: #54565A;" class="mb-3 small"><?= $area['titulo']; ?></a>
-                <?php } ?>
             </div>
 
             <div class="col-12 col-lg-2 d-flex flex-column align-items-center align-items-lg-start justify-content-start">

@@ -35,7 +35,7 @@
               <textarea name="descricao-projeto" class='form-control' id="descricao-projeto" rows="3" required></textarea>
             </div>
 
-            <div class='mb-3'>
+            <div class='mb-3 d-none'>
               <label for='images-projeto' class="small mb-0">Imagem do projeto (Opcional)</label>
               <input type='file' accept=".png, .jpg, .jpeg" id='imagens-projeto' name='imagens-projeto[]' class='form-control' multiple>
             </div>

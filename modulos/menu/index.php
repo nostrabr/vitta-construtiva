@@ -30,12 +30,7 @@
         <nav class="d-flex flex-column justify-content-center align-items-start">
             <a href="<?= $base_url; ?>index.php" class="mb-4 fs-5 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
             <a href="<?= $base_url; ?>sobre-nos.php" class="mb-4 fs-5 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
-            <a id="drop-mobile" onclick="dropMobile()" class="w-100 d-flex align-items-center justify-content-between text-black-2 mb-4 fs-5">Áreas de atuação <i id="down-ico" class="fas fa-chevron-down"></i></a>
-            <div id="container-drop-items" class="d-none flex-column justify-content-center align-items-start">
-                <?php foreach ($areas_atuacao as $key => $area) { ?>
-                    <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $area['id']; ?>" class="mb-4 fs-5 text-0"><?= $area['titulo']; ?></a>
-                <?php } ?>
-            </div>
+            <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $areas_atuacao[0]['id']; ?>" class="mb-4 fs-5 text-black-2"><?= $areas_atuacao[0]['titulo']; ?></a>
             <a href="<?= $base_url; ?>depoimentos.php" class="mb-4 fs-5 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
             <a href="<?= $base_url; ?>contato.php" class="mb-4 fs-5 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
             
@@ -54,16 +49,7 @@
     <nav class="d-none d-lg-flex justify-content-center align-items-center">
         <a href="<?= $base_url; ?>index.php" class="mx-4 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
         <a href="<?= $base_url; ?>sobre-nos.php" class="mx-4 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
-        <div class="dropdown mx-4">
-            <a class="dropdown-toggle text-black-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Áreas de atuação
-            </a>
-            <ul class="dropdown-menu p-3 bg-0" aria-labelledby="dropdownMenuLink">
-                <?php foreach ($areas_atuacao as $key => $area) { ?>
-                    <li><a class="dropdown-item mb-2 small text-white" href="<?= $base_url; ?>area-atuacao.php?id=<?= $area['id']; ?>"><?= $area['titulo']; ?></a></li>
-                <?php } ?>
-            </ul>
-        </div>
+        <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $areas_atuacao[0]['id']; ?>" class="mx-4 text-black-2"><?= $areas_atuacao[0]['titulo']; ?></a>
         <a href="<?= $base_url; ?>depoimentos.php" class="mx-4 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
         <a href="<?= $base_url; ?>contato.php" class="mx-4 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
 
