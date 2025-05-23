@@ -34,6 +34,9 @@
     <!-- SWIPER -->
     <link rel="stylesheet" href="<?= $base_url; ?>assets/dependencias/swiper/swiper.css">
 
+    <!-- FANCYBOX CSS -->
+    <link rel="stylesheet" href="<?= $base_url; ?>assets/dependencias/fancybox/fancybox.css">
+
     <!-- GLOBAL CSS -->
     <link rel="stylesheet" href="<?= $base_url; ?>assets/css/style.css">
 

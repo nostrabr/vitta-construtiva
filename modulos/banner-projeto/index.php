@@ -1,6 +1,6 @@
 <style>
     #banner-site{
-        height: 60vh !important;
+        height: 90vh !important;
     }
     #banner-site img{
         height: 100% !important;
@@ -11,7 +11,7 @@
 
     @media(min-width:1500px) {
         #banner-site{
-            height: 40vh !important;
+            height: 90vh !important;
         }
     }
     

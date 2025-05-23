@@ -23,7 +23,7 @@
     .icone-link-compartilhar{
         padding: 10px !important;
         border-radius: 5px !important;
-        color: #BD937A !important;
+        color: #54565A !important;
         background-color: transparent !important;
     }
 
@@ -54,6 +54,45 @@
         object-position: center !important;
     }
 
+
+    .container-imagem-galeria{
+        width: 100%;
+        height: 650px;
+        overflow: hidden !important;
+        border-radius: 5px;
+    }
+    .container-imagem-galeria img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Estilos para os botões de navegação do Swiper */
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #fff;
+        background-color: rgba(84, 86, 90, 0.5);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background-color: rgba(84, 86, 90, 0.8);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
     @media(min-width:1500px) {
         .container-sobre-projeto{
             width: 80% !important;
@@ -65,6 +104,10 @@
 
         .container-img-projeto-sobre{
             height: 380px;
+        }
+
+        .container-imagem-galeria{
+            height: 750px;
         }
     }
     
@@ -80,25 +123,54 @@
         .container-img-projeto-sobre{
             height: 300px;
         }
+        .container-imagem-galeria{
+            height: 300px;
+        }
+    }
+
+    .data-img-fancy:hover{
+        opacity: 1 !important;
     }
 </style>
 
 
 <section class="py-5" style="overflow-x: hidden !important;">
-    <h1 class="d-none">Nossos projetos</h1>
+    <h2 class="d-none">Nossos projetos</h2>
+
+
+    <!-- GALERIA -->
+    <?php if(count($projeto['imagensProjeto']) != 0) { ?>
+        <section class="container-sobre-projeto mx-auto my-5">
+            <h5 class="text-center mb-4" style="color: #3C3C3B;">Galeria de imagens</h5>        <div class="swiper">
+                <div class="swiper-wrapper">
+                    <?php foreach ($projeto['imagensProjeto'] as $key => $imagem) { ?>
+                        <div class="swiper-slide">
+                            <div class="container-imagem-galeria">
+                                <a class="data-img-fancy" data-fancybox="gallery" href="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $imagem['imagem'] ?>"><img src="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $imagem['imagem'] ?>" alt="imagem"></a>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+                <!-- Adiciona os botões de navegação -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    <?php } ?>
+    <!-- GALERIA -->
 
 
     <div class="container-sobre-projeto mx-auto py-5 text-center">
-        <img <?= $anima_scroll; ?> style="width: 4em;" src='<?= $base_url ?>assets/imagens/site/icone-logo-projeto.png'>
+        <img <?= $anima_scroll; ?> style="width: 9em;" src='<?= $base_url ?>assets/imagens/site/logo-menu.png'>
 
-        <div style="background-color: #BD937A;" class="w-100 px-lg-5">
+        <div style="background-color: #54565A;" class="w-100 px-lg-5">
             <div class="mt-5 rounded px-4 px-lg-5 py-5 row mx-0 mx-lg-5">
                 <div <?= $anima_scroll; ?> class="col-12 col-lg-4 mb-5 mb-lg-0">
                     <div class="container-img-projeto-sobre">
                         <img src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['imagem_info_projeto'] ?>'>
                     </div>
                 </div>
-                <div <?= $anima_scroll; ?> class="font-text-info col-12 col-lg-8 text-start ps-0 pe-0 ps-lg-5" style="color: #3C3C3B;">
+                <div <?= $anima_scroll; ?> class="font-text-info col-12 col-lg-8 text-start ps-0 pe-0 ps-lg-5" style="color: white;">
                     <?= $projeto['descricao']; ?>
                 </div>
             </div>
@@ -160,5 +232,18 @@
         navigator.clipboard.writeText(link).then(() => {
             alert('Link copiado para a área de transferência!'); 
         })
+    });
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1, 
+        spaceBetween: 3,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 </script>

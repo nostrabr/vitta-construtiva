@@ -7,11 +7,11 @@ use Repositories\AreaAtuacaoRepository;
 $id = $_GET['id'];
 
 // salvar
-$res = AreaAtuacaoRepository::deleteArea($id);
+$res = AreaAtuacaoRepository::ordenarProjeto($id);
 
 
 if($res) {
-    header('Location: ../../../../areas-atuacao.php?delete=true');
+    header('Location: ../../../../areas-atuacao.php?success=true');
 } else {
     header('Location: ../../../../areas-atuacao.php?error=true');
 }

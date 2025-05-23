@@ -11,7 +11,7 @@ $res = AreaAtuacaoRepository::deleteImgProjeto($id);
 
 
 if($res) {
-    header('Location: ../../../../areas-atuacao.php?create=true');
+    header('Location: ../../../../areas-atuacao.php?delete=true');
 } else {
     header('Location: ../../../../areas-atuacao.php?error=true');
 }

@@ -7,8 +7,13 @@ use Models\ImagensProjeto;
 
 class AreaAtuacaoRepository {
     // pegando todas as áreas de atuação
+    // public static function getAll() {
+    //     return AreaAtuacao::with('projetos.imagensProjeto')->get();
+    // }
     public static function getAll() {
-        return AreaAtuacao::with('projetos.imagensProjeto')->get();
+        return AreaAtuacao::with(['projetos' => function($query) {
+            $query->orderBy('ordem_data', 'desc')->with('imagensProjeto');
+        }])->get();
     }
 
     //criando uma nova área de atuação
@@ -261,5 +266,16 @@ class AreaAtuacaoRepository {
     // pegando area de atuacao por id
     public static function getAreaAtuacao($id) {
         return AreaAtuacao::with('projetos')->where('id', $id)->first();
+    }
+
+    // ordenando projeto passando a data full
+    public static function ordenarProjeto($id) {
+        $res = Projeto::where('id', $id)->update(['ordem_data' => date('Y-m-d H:i:s')]);
+
+        if($res) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

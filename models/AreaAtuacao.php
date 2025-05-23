@@ -12,7 +12,8 @@ class AreaAtuacao extends Model {
         'titulo',
         'banner',
         'descricao',
-        'titulo_projetos'
+        'titulo_projetos',
+        'ordem_data'
     ];
     public $timestamps = false;
 
