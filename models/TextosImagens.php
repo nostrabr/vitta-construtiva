@@ -11,6 +11,7 @@ class TextosImagens extends Model {
         'texto_sobre_home',
         'texto_sobre_pag',
         'texto_colaboradores',
+        'titulo_texto_sobre_home',
     ];
     public $timestamps = false;
 }

@@ -35,6 +35,18 @@
     </div>
     <!-- GIF -->
 
+    <!-- TITULO SOBRE HOME -->
+    <div class="my-5 py-5 border-bottom">
+        <form onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/textos-imagens/php/att-titulo-texto-home.php" method="post">
+            <div class='mb-3'>
+              <label for='titulo-texto-home' class="mb-1 fs-6 fw-semibold">Título texto sobre página Home*</label>
+              <textarea id='titulo-texto-home' name='titulo-texto-home' rows="4" class='form-control' required><?= $textos_imagens['titulo_texto_sobre_home']; ?></textarea>
+            </div>
+            <button type="submit" class="btn px-5 btn-success">Atualizar</button>
+        </form>
+    </div>
+    <!-- TITULO SOBRE HOME -->
+
     <!-- TEXTO SOBRE HOME -->
     <div class="my-5 py-5 border-bottom">
         <form onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/textos-imagens/php/att-texto-home.php" method="post" enctype="multipart/form-data">
