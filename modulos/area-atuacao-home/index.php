@@ -90,7 +90,7 @@
                 <div <?= $anima_scroll; ?> class="col-12 mb-5 mb-lg-3 p-0 px-lg-2" style="cursor: pointer;" onclick="window.location.href='<?= $base_url; ?>area-atuacao.php?id=<?= $area['id']; ?>'">
                     <div onmouseleave="addBg('<?= $area['id']; ?>')" onmouseover="removerBg('<?= $area['id']; ?>')" style="background-image: url('<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area['capa']; ?>');" class="container-capa-area">
                         <div id="item-area-home-<?= $area['id']; ?>" class="bg-opacity w-100 position-relative h-100 d-flex align-items-center justify-content-center">
-                            <h2 class="text-white"><?= $area['titulo']; ?></h2>
+                            <h2 class="text-white text-center"><?= $area['titulo']; ?></h2>
                             <img class="marca-dagua-area-home" src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area['marca_dagua']; ?>'>
                         </div>
                     </div>

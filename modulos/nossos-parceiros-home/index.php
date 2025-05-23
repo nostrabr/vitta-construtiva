@@ -47,8 +47,10 @@
         }
 
         .conatiner-logo-parceiro{
-            width: 70% !important;
-            height: 120px !important;
+            width: 50% !important;
+            height: 150px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
 
         .ico-parceiro{
@@ -60,34 +62,21 @@
 
 
 <section class="py-5">
-    <h1 class="d-none">Nossos parceiros</h1>
+    <h2 class="d-none">Nossos parceiros</h2>
 
     <div class="container mx-auto py-4">
-            <!-- mobile -->
-            <div class="d-block d-lg-none text-center mt-0 mb-5 pb-4">
-                <img class="ico-parceiro" src='<?= $base_url ?>assets/imagens/site/ico-parceiro.png'>
-            </div>
-            <!-- mobile -->
 
             <h5 <?= $anima_scroll; ?> class="text-center title-parceiros-home">Nossos <strong>Parceiros</strong></h5>
 
-            <div <?= $anima_scroll; ?> class="swiper">
-                <div class="swiper-wrapper">
-                    <?php foreach ($parceiros as $key => $parceiro) { ?>
-                        <div class="swiper-slide">
-                            <div class="conatiner-logo-parceiro">
-                                <img class="logo" src="<?= $base_url; ?>admin/assets/imagens/arquivos/parceiros/<?= $parceiro['logo']; ?>" alt="Logo">
-                            </div>
+            <div class="row justify-content-center">
+                <?php foreach ($parceiros as $key => $parceiro) { ?>
+                    <div class="col-12 col-lg-2 px-1 px-lg-3">
+                        <div class="conatiner-logo-parceiro">
+                            <img class="logo" src="<?= $base_url; ?>admin/assets/imagens/arquivos/parceiros/<?= $parceiro['logo']; ?>" alt="Logo">
                         </div>
-                    <?php } ?>
-                </div>
+                    </div>
+                <?php } ?>
             </div>
-
-            <!-- desktop -->
-            <div class="d-none d-lg-block text-center mt-5">
-                <img class="ico-parceiro" src='<?= $base_url ?>assets/imagens/site/ico-parceiro.png'>
-            </div>
-            <!-- desktop -->
 
     </div>
 </section>
@@ -95,19 +84,3 @@
 
 
 <script src="<?= $base_url; ?>assets/dependencias/swiper/swiper.js"></script>
-<script>
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: 2, // Quantidade de logos no mobile
-            spaceBetween: 3, // Espaçamento entre os slides
-            autoplay: {
-                delay: 4000, // 3 segundos
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                992: {
-                    slidesPerView: 5, // Quantidade de logos no desktop
-                },
-            },
-            loop: true, // Loop infinito
-        });
-</script>
