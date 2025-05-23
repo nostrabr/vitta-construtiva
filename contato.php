@@ -27,6 +27,10 @@
 </head>
 <body>
 
+    <!-- WPP FLOAT -->
+    <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>
+    <!-- WPP FLOAT -->
+
     <!-- LOADING -->
     <?php include_once  __DIR__ .'/modulos/loading/index.php'; ?>
     <!-- LOADING -->

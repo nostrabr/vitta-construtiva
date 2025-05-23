@@ -51,7 +51,9 @@
 
 
     <div style="color: #3C3C3B;" class="container mx-auto py-5">
-        <h5 <?= $anima_scroll; ?> class="mb-5 pb-3 text-center">Conheça nossos <strong>engenheiros</strong></h5>
+        <h5 <?= $anima_scroll; ?> class="mb-5 text-center">Conheça nossos <strong>colaboradores</strong></h5>
+
+        <p style="color: #3C3C3B;" class="mb-5 text-center"><?= $textos_imagens['texto_colaboradores']; ?></p>
 
         <div <?= $anima_scroll; ?> class="swiper">
             <div class="swiper-wrapper">

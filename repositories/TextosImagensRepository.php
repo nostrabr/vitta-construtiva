@@ -23,4 +23,9 @@ class TextosImagensRepository {
     public static function updateTextoQuemSomos($data) {
         return TextosImagens::where('id', 1)->update($data);
     }
+
+    // atualizando texto colaboradores
+    public static function updateTextoColaboradores($data) {
+        return TextosImagens::where('id', 1)->update($data);
+    }
 }

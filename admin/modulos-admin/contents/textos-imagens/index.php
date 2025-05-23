@@ -59,6 +59,19 @@
     </div>
     <!-- TEXTO SOBRE PÁGINA QUEM SOMOS -->
 
+
+    <!-- TEXTO Conheça nossos colaboradores -->
+    <div class="my-5 py-5">
+        <form onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/contents/textos-imagens/php/att-texto-colaboradores.php" method="post">
+            <div class='mb-3'>
+              <label for='texto-colaboradores' class="mb-1 fs-6 fw-semibold">Texto colaboradores*</label>
+              <textarea id='texto-colaboradores' name='texto-colaboradores' rows="4" class='form-control' required><?= $textos_imagens['texto_colaboradores']; ?></textarea>
+            </div>
+            <button type="submit" class="btn px-5 btn-success">Atualizar</button>
+        </form>
+    </div>
+    <!-- TEXTO Conheça nossos colaboradores -->
+
 </section>
 <!-- textos imagens -->
 
