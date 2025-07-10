@@ -27,7 +27,8 @@
     @media(max-width:992px) {
         .container-depoimento{
             width: 100%;
-            height: 450px;
+            height: auto;
+            padding: 40px 25px !important;
         }
     }
 </style>
@@ -41,13 +42,13 @@
 
     <div class="container mx-auto py-5">
         <h5 <?= $anima_scroll; ?> style="color: #3C3C3B;" class="fw-semibold mb-2 text-center">Depoimentos</h5>
-        <p <?= $anima_scroll; ?> style="color: #97999B;" class="text-center mb-5">Confira o que nossos clientes têm a dizer sobre a experiência contrutiva dos projetos que ajudaram a transformar seus sonhos.</p>
+        <p <?= $anima_scroll; ?> style="color: #97999B;" class="text-center mb-5">Confira o que alguns de nossos clientes têm a dizer sobre a sua experiência conosco</p>
 
         <div class="row">
 
         <?php foreach ($depoimentos as $key => $depo) { ?>
             <?php if($depo['tipo'] == 'texto'){ ?>
-                <div <?= $anima_scroll; ?> class="col-12 col-lg-4 mb-3 px-2">
+                <div <?= $anima_scroll; ?> class="col-12 col-lg-6 mb-3 px-2">
                     <div style="background-color: #BD937A;" class="container-depoimento px-4 d-flex flex-column justify-content-center">
                         <div class="mt-4 d-flex justify-content-start align-items-center">
                             <div class="foto-perfil me-3"><img src='<?= $base_url ?>admin/assets/imagens/arquivos/depoimentos/<?= $depo['foto']; ?>'></div>

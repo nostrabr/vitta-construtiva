@@ -112,7 +112,7 @@
         <h1 <?= $anima_scroll; ?> style="color: #110F0A;" class="font-im-fell mb-5">Fale Conosco</h1>
 
         <div style="color: #110F0A;" class="d-flex flex-column mb-5">
-            <h6 <?= $anima_scroll; ?> class="fw-semibold mb-4">Comercial p/ clientes</h6>
+            <h6 <?= $anima_scroll; ?> class="fw-semibold mb-4">Comercial para clientes</h6>
 
             <a <?= $anima_scroll; ?> href="mailto:<?= $contatos['email_clientes']; ?>" style="color: #110F0A;" class="mb-2"><?= $contatos['email_clientes']; ?></a>
             <a <?= $anima_scroll; ?> href="https://wa.me/<?= preg_replace("/[^0-9]/", "", $contatos['telefone_clientes']); ?>" style="color: #110F0A;"><?= $contatos['telefone_clientes']; ?></a>

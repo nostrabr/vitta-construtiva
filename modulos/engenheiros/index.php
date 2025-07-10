@@ -42,6 +42,50 @@
             margin: 0px 10px !important
         }
     }
+
+        /* Estilos das setas de navegação */
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #54565A !important;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        width: 40px !important;
+        height: 40px !important;
+        margin-top: -20px !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        transform: scale(1.05);
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.3 !important;
+    }
+
+    @media(max-width:992px) {
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 35px !important;
+            height: 35px !important;
+            margin-top: -17.5px !important;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 14px !important;
+        }
+    }
 </style>
 
 
@@ -71,6 +115,10 @@
                     <?php } ?>
 
             </div>
+
+            <!-- Setas de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </section>
@@ -84,6 +132,10 @@
         autoplay: {
             delay: 4000, // 3 segundos
             disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         breakpoints: {
             992: {
