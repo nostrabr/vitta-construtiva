@@ -105,8 +105,8 @@
             <a <?= $anima_scroll; ?> id="btn-arqui" class="d-inline-block mb-5 pb-5" href="https://www.instagram.com/shammaarquitetura/" target="_blank"><i class="fab fa-instagram me-2"></i> shammaarquitetura</a>
         <?php } ?>
 
-        <h3 <?= $anima_scroll; ?> style="color: #3C3C3B;"><?= $area_atuacao['titulo_projetos']; ?></h3>
-        <p <?= $anima_scroll; ?> class="confira-title" style="color: #97999B;">Confira nossos projetos de <?= $area_atuacao['titulo'] ?>.</p>
+        <h3 <?= $anima_scroll; ?> style="color: #3C3C3B;">Obras Vittá Construtora</h3>
+        <p <?= $anima_scroll; ?> class="confira-title" style="color: #97999B;">Clique para conhecer algumas de nossas obras</p>
 
         <!-- PROJETOS -->
         <div class="w-100 row mt-5">

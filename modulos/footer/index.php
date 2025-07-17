@@ -32,7 +32,6 @@
                 <h6 style="color: #110F0A;" class="fw-semibold mb-4">Nos acompanhe</h6>
 
                 <div class="d-flex">
-                    <a class="fs-4" href="<?= $contatos['facebook']; ?>" target="_blank"><i style="color: #97999B;" class="fab fa-facebook"></i></a>
                     <a class="mx-4 fs-4" href="<?= $contatos['instagram']; ?>" target="_blank"><i style="color: #97999B;" class="fab fa-instagram"></i></a>
                     <a class="fs-4" href="<?= $contatos['linkedin']; ?>" target="_blank"><i style="color: #97999B;" class="fab fa-linkedin"></i></a>
                 </div>

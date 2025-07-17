@@ -64,7 +64,7 @@
 
     @media(max-width:1600px) {
         #pag-contato{
-            height: 85vh;
+            height: 95vh;
         }
     }
 
