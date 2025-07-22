@@ -48,7 +48,7 @@
     <!-- ÁREA ATUAÇÃO -->
 
     <!-- NOSSOS PARCEIROS HOME -->
-    <?php include_once  __DIR__ .'/modulos/nossos-parceiros-home/index.php'; ?>
+
     <!-- NOSSOS PARCEIROS HOME -->
     
     <!-- SOBRE HOME -->
