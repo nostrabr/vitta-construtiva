@@ -14,7 +14,7 @@
     $area_atuacao = null;
 
     if(!$id) {
-        header('Location: '.$base_url.'index.php');
+        header('Location: '.$base_url);
         exit;
     }
 
@@ -26,14 +26,14 @@
     } 
 
     if(!$area_atuacao) {
-        header('Location: '.$base_url.'index.php');
+        header('Location: '.$base_url);
         exit;
     }
 
     $seo_title = $area_atuacao['titulo'].' em Passo Fundo RS | Vittà Construtora';
     $seo_description = 'Conheça os serviços de '.$area_atuacao['titulo'].' da Vittà Construtora em Passo Fundo RS e veja obras residenciais e comerciais realizadas.';
     $seo_h1 = $area_atuacao['titulo'].' em Passo Fundo RS';
-    $canonical_url = rtrim($base_url, '/').'/area-atuacao.php?id='.$area_atuacao['id'];
+    $canonical_url = rtrim($base_url, '/').'/areas/'.$area_atuacao['id'];
 ?>
 
 <!DOCTYPE html>

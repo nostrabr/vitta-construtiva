@@ -112,7 +112,7 @@
         <div class="w-100 row mt-5">
             <?php foreach ($area_atuacao['projetos'] as $key => $projeto) { ?>
                 <div <?= $anima_scroll; ?> class="col-12 col-lg-4 p-1">
-                    <a href="<?= $base_url; ?>projeto.php?id=<?= $projeto['id'] ?>&area=<?= $area_atuacao['id'] ?>">
+                    <a href="<?= $base_url; ?>projetos/<?= $area_atuacao['id'] ?>/<?= $projeto['id'] ?>">
                         <div class="container-capa-projeto">
                             <img src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['capa_projeto'] ?>' alt='<?= $projeto['titulo'] ?>'>
                         </div>

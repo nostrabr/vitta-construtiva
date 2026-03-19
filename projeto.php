@@ -25,9 +25,9 @@
         $seo_title = $nomeProjetoSeo.' | '.$areaProjeto['titulo'].' em Passo Fundo RS | Vittà Construtora';
         $seo_description = 'Veja detalhes do '.$nomeProjetoSeo.', obra da Vittà Construtora em '.$areaProjeto['titulo'].' com foco em qualidade e execução em Passo Fundo RS.';
         $seo_h1 = $nomeProjetoSeo.' - '.$areaProjeto['titulo'].' em Passo Fundo RS';
-        $canonical_url = rtrim($base_url, '/').'/projeto.php?id='.$id.'&area='.$idArea;
+        $canonical_url = rtrim($base_url, '/').'/projetos/'.$idArea.'/'.$id;
     } else {
-        header('Location:' . $base_url . 'index.php');
+        header('Location:' . $base_url);
         exit;
     }
 ?>

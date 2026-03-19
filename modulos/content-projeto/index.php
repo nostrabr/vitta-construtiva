@@ -193,7 +193,7 @@
                 <div class="swiper-wrapper">
 
                     <?php foreach ($areaProjeto['projetos'] as $key => $projeto) { ?>
-                        <div style="cursor: pointer;" onclick="window.location.href='<?= $base_url; ?>projeto.php?id=<?= $projeto['id']; ?>&area=<?= $areaProjeto['id']; ?>'" class="swiper-slide">
+                        <div style="cursor: pointer;" onclick="window.location.href='<?= $base_url; ?>projetos/<?= $areaProjeto['id']; ?>/<?= $projeto['id']; ?>'" class="swiper-slide">
                             <div class="container-thumb-pro">
                                 <img class="thumb-pro" src="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['capa_projeto']; ?>" alt="Projeto relacionado <?= $projeto['id']; ?>">
                             </div>
@@ -230,7 +230,7 @@
 
     // Função para copiar o link para a área de transferência
     document.getElementById('copyLinkButton').addEventListener('click', function () {
-        const link = '<?= $base_url; ?>' + 'projeto.php?id=<?= $_GET['id'] ?>&area=<?= $_GET['area'] ?>';
+        const link = '<?= $base_url; ?>projetos/<?= $_GET['area'] ?>/<?= $_GET['id'] ?>';
 
         navigator.clipboard.writeText(link).then(() => {
             alert('Link copiado para a área de transferência!'); 

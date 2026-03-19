@@ -65,7 +65,7 @@ try {
 
     $mail->send();
 
-    header('Location: ' . $_ENV['BASE_URL'] . 'contato.php?success=true');
+    header('Location: ' . $_ENV['BASE_URL'] . 'contato?success=true');
     exit;
 
 } catch (Exception $e) {

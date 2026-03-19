@@ -19,7 +19,7 @@
                 <h2 class="mb-1" style="color: #3C3C3B;">Sua obra bem executada do começo ao fim.</h2>
                 <h5 class="fw-normal mb-5" style="color: #3C3C3B;">Com eficiência, qualidade e atenção aos detalhes em cada etapa.</h5>
 
-                <a class="button-2" href="<?= $base_url; ?>contato.php">Entre em contato</a>
+                <a class="button-2" href="<?= $base_url; ?>contato">Entre em contato</a>
             </div>
         </div>
     </div>

@@ -6,17 +6,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://construtoravitta.com/sobre-nos.php</loc>
+    <loc>https://construtoravitta.com/sobre-nos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://construtoravitta.com/depoimentos.php</loc>
+    <loc>https://construtoravitta.com/depoimentos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://construtoravitta.com/contato.php</loc>
+    <loc>https://construtoravitta.com/contato</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -22,10 +22,10 @@
                 <h6 style="color: #110F0A;" class="fw-semibold mb-4">Empresa</h6>
 
                 <a href="<?= $base_url; ?>" style="color: #54565A;" class="mb-3 small">Home</a>
-                <a href="<?= $base_url; ?>sobre-nos.php" style="color: #54565A;" class="mb-3 small">Quem Somos</a>
-                <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $areas_atuacao[0]['id']; ?>" style="color: #54565A;" class="mb-3 small"><?= $areas_atuacao[0]['titulo']; ?></a>
-                <a href="<?= $base_url; ?>depoimentos.php" style="color: #54565A;" class="mb-3 small">Depoimentos</a>
-                <a href="<?= $base_url; ?>contato.php" style="color: #54565A;" class="mb-3 small">Contato</a>
+                <a href="<?= $base_url; ?>sobre-nos" style="color: #54565A;" class="mb-3 small">Quem Somos</a>
+                <a href="<?= $base_url; ?>areas/<?= $areas_atuacao[0]['id']; ?>" style="color: #54565A;" class="mb-3 small"><?= $areas_atuacao[0]['titulo']; ?></a>
+                <a href="<?= $base_url; ?>depoimentos" style="color: #54565A;" class="mb-3 small">Depoimentos</a>
+                <a href="<?= $base_url; ?>contato" style="color: #54565A;" class="mb-3 small">Contato</a>
             </div>
 
             <div class="col-12 col-lg-2 d-flex flex-column align-items-center align-items-lg-start justify-content-start">

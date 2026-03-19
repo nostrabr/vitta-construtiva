@@ -28,11 +28,11 @@
         <div class="w-100 text-center mb-4"><img onclick="menu()" style="width: 50px;" src='<?= $base_url ?>assets/imagens/site/close.png' alt='Fechar menu'></div>
         
         <nav class="d-flex flex-column justify-content-center align-items-start">
-            <a href="<?= $base_url; ?>index.php" class="mb-4 fs-5 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
-            <a href="<?= $base_url; ?>sobre-nos.php" class="mb-4 fs-5 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
-            <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $areas_atuacao[0]['id']; ?>" class="mb-4 fs-5 text-black-2"><?= $areas_atuacao[0]['titulo']; ?></a>
-            <a href="<?= $base_url; ?>depoimentos.php" class="mb-4 fs-5 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
-            <a href="<?= $base_url; ?>contato.php" class="mb-4 fs-5 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
+            <a href="<?= $base_url; ?>" class="mb-4 fs-5 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
+            <a href="<?= $base_url; ?>sobre-nos" class="mb-4 fs-5 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
+            <a href="<?= $base_url; ?>areas/<?= $areas_atuacao[0]['id']; ?>" class="mb-4 fs-5 text-black-2"><?= $areas_atuacao[0]['titulo']; ?></a>
+            <a href="<?= $base_url; ?>depoimentos" class="mb-4 fs-5 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
+            <a href="<?= $base_url; ?>contato" class="mb-4 fs-5 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
             
             <a href="<?= $contatos['instagram']; ?>" target="_blank" class="mt-3"><img style="width: 35px;" src='<?= $base_url ?>assets/imagens/site/insta-menu.png' alt='Instagram da Vittà Construtora'></a>
         </nav>
@@ -47,11 +47,11 @@
     <a href="<?= $base_url; ?>"><img src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='Logo Vittà Construtora' class='logo-menu'></a>
 
     <nav class="d-none d-lg-flex justify-content-center align-items-center">
-        <a href="<?= $base_url; ?>index.php" class="mx-4 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
-        <a href="<?= $base_url; ?>sobre-nos.php" class="mx-4 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
-        <a href="<?= $base_url; ?>area-atuacao.php?id=<?= $areas_atuacao[0]['id']; ?>" class="mx-4 text-black-2"><?= $areas_atuacao[0]['titulo']; ?></a>
-        <a href="<?= $base_url; ?>depoimentos.php" class="mx-4 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
-        <a href="<?= $base_url; ?>contato.php" class="mx-4 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
+        <a href="<?= $base_url; ?>" class="mx-4 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
+        <a href="<?= $base_url; ?>sobre-nos" class="mx-4 <?= $linkAtivoSobreNos ? 'active-link' : 'text-black-2' ?>">Quem somos</a>
+        <a href="<?= $base_url; ?>areas/<?= $areas_atuacao[0]['id']; ?>" class="mx-4 text-black-2"><?= $areas_atuacao[0]['titulo']; ?></a>
+        <a href="<?= $base_url; ?>depoimentos" class="mx-4 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
+        <a href="<?= $base_url; ?>contato" class="mx-4 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
 
         <a href="<?= $contatos['instagram']; ?>" target="_blank" class="ms-4"><img style="width: 20px;" src='<?= $base_url ?>assets/imagens/site/insta-menu.png' alt='Instagram da Vittà Construtora'></a>
     </nav>

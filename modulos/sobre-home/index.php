@@ -57,7 +57,7 @@
                 <img class="mb-5" id="logo-sobre-home" src='<?= $base_url ?>assets/imagens/site/logo-sobre-home.png' alt='Logo Vittà Construtora'>
                 <h3 class="mb-3" style="color: #110F0A;"><?= $textos_imagens['titulo_texto_sobre_home']; ?></h3>
                 <p class="mb-4 fs-5" style="color:#110F0A;"><?= $textos_imagens['texto_sobre_home']; ?></p>
-                <a class="button-1 fs-5" href="<?= $base_url; ?>sobre-nos.php">Conheça</a>
+                <a class="button-1 fs-5" href="<?= $base_url; ?>sobre-nos">Conheça</a>
             </div>
 
         </div>
