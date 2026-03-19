@@ -14,7 +14,7 @@
 
 <section class="px-4 px-lg-0 py-5" style="background-color: #75787B;">
     <div class="container mx-auto py-5 text-center">
-        <img <?= $anima_scroll; ?> style="width: 3.5em;" src='<?= $base_url ?>assets/imagens/site/icone-area-atuacao.png'>
+        <img <?= $anima_scroll; ?> style="width: 3.5em;" src='<?= $base_url ?>assets/imagens/site/icone-area-atuacao.png' alt='Ícone da área de atuação'>
 
         <h2 <?= $anima_scroll; ?> class="fw-semibold text-white mt-5"><?= $area_atuacao['titulo']; ?></h2>
 

@@ -23,6 +23,6 @@
 </style>
 
 <section id="banner-site">
-    <img class="w-100 d-none d-lg-block" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_quem_somos_desktop']; ?>'>
-    <img class="w-100 d-block d-lg-none" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_quem_somos_mobile']; ?>'>
+    <img class="w-100 d-none d-lg-block" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_quem_somos_desktop']; ?>' alt='Banner da página quem somos da Vittà Construtora'>
+    <img class="w-100 d-block d-lg-none" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_quem_somos_mobile']; ?>' alt='Banner da página quem somos no mobile'>
 </section>

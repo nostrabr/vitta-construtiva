@@ -96,7 +96,7 @@
 
 
 <section class="py-5 px-4 px-lg-0">
-    <h1 class="d-none">Nossos projetos</h1>
+    <h2 class="d-none">Nossos projetos</h2>
 
 
     <div class="container-projetos-areas py-5 mx-auto text-center">

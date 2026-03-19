@@ -14,8 +14,8 @@
     <div class="container mx-auto mb-5">
         <div class="row">
             <div class="col-12 col-lg-8 mb-5 mb-lg-0">
-                <a href="<?= $base_url; ?>" class="d-none d-lg-block text-start"><img style="width: 160px;" src='<?= $base_url ?>assets/imagens/site/logo-footer-desktop.png'></a>
-                <a href="<?= $base_url; ?>" class="d-block d-lg-none text-center"><img style="width: 55%;" src='<?= $base_url ?>assets/imagens/site/logo-footer-mobile.png'></a>
+                <a href="<?= $base_url; ?>" class="d-none d-lg-block text-start"><img style="width: 160px;" src='<?= $base_url ?>assets/imagens/site/logo-footer-desktop.png' alt='Logo Vittà Construtora no rodapé'></a>
+                <a href="<?= $base_url; ?>" class="d-block d-lg-none text-center"><img style="width: 55%;" src='<?= $base_url ?>assets/imagens/site/logo-footer-mobile.png' alt='Logo Vittà Construtora no rodapé mobile'></a>
             </div>
 
             <div class="mb-5 mb-lg-0 col-12 col-lg-2 d-flex flex-column align-items-center align-items-lg-start justify-content-start">
@@ -41,9 +41,9 @@
 
     <div id="rodape" class="py-4">
         <div class="container mx-auto d-flex flex-column flex-lg-row align-items-center justify-content-between px-4 px-lg-0">
-            <span class="text-center text-lg-start mb-4 mb-lg-0" style="color: #97999B;">© <?= date('Y'); ?> Vittá Construtora. Todos os direitos reservados.</span>
+            <span class="text-center text-lg-start mb-4 mb-lg-0" style="color: #97999B;">© <?= date('Y'); ?> Vittà Construtora. Todos os direitos reservados.</span>
 
-            <a href="https://nostrabr.com/" target="_blank"><img style="width: 80px;" src='<?= $base_url ?>assets/imagens/site/logo-nostra.png'></a>
+            <a href="https://nostrabr.com/" target="_blank"><img style="width: 80px;" src='<?= $base_url ?>assets/imagens/site/logo-nostra.png' alt='Desenvolvido por Nostra'></a>
         </div>
     </div>
 </section>

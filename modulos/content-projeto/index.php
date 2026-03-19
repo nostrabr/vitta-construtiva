@@ -138,13 +138,13 @@
     <h2 class="d-none">Nossos projetos</h2>
 
     <div class="container-sobre-projeto mx-auto py-5 text-center">
-        <img <?= $anima_scroll; ?> style="width: 9em;" src='<?= $base_url ?>assets/imagens/site/logo-menu.png'>
+        <img <?= $anima_scroll; ?> style="width: 9em;" src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='Logo Vittà Construtora'>
 
         <div style="background-color: #54565A;" class="w-100 px-lg-5">
             <div class="mt-5 rounded px-4 px-lg-5 py-5 row mx-0 mx-lg-5">
                 <div <?= $anima_scroll; ?> class="col-12 col-lg-4 mb-5 mb-lg-0">
                     <div class="container-img-projeto-sobre">
-                        <img src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['imagem_info_projeto'] ?>'>
+                        <img src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['imagem_info_projeto'] ?>' alt='Imagem de destaque do projeto'>
                     </div>
                 </div>
                 <div <?= $anima_scroll; ?> class="font-text-info col-12 col-lg-8 text-start ps-0 pe-0 ps-lg-5" style="color: white;">
@@ -163,7 +163,7 @@
                     <?php foreach ($projeto['imagensProjeto'] as $key => $imagem) { ?>
                         <div class="swiper-slide">
                             <div class="container-imagem-galeria">
-                                <a class="data-img-fancy" data-fancybox="gallery" href="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $imagem['imagem'] ?>"><img src="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $imagem['imagem'] ?>" alt="imagem"></a>
+                                <a class="data-img-fancy" data-fancybox="gallery" href="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $imagem['imagem'] ?>"><img src="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $imagem['imagem'] ?>" alt="Galeria do projeto <?= $key + 1 ?>"></a>
                             </div>
                         </div>
                     <?php } ?>
@@ -195,7 +195,7 @@
                     <?php foreach ($areaProjeto['projetos'] as $key => $projeto) { ?>
                         <div style="cursor: pointer;" onclick="window.location.href='<?= $base_url; ?>projeto.php?id=<?= $projeto['id']; ?>&area=<?= $areaProjeto['id']; ?>'" class="swiper-slide">
                             <div class="container-thumb-pro">
-                                <img class="thumb-pro" src="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['capa_projeto']; ?>" alt="thumb">
+                                <img class="thumb-pro" src="<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['capa_projeto']; ?>" alt="Projeto relacionado <?= $projeto['id']; ?>">
                             </div>
                         </div>
                     <?php } ?>

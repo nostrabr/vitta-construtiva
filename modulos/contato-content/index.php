@@ -101,11 +101,11 @@
 
 
 <section id="pag-contato" class="d-flex flex-column flex-lg-row">
-    <h1 class="d-none">Nossos contatos</h1>
+    <h2 class="d-none">Nossos contatos</h2>
 
     <div <?= $anima_scroll; ?> id="banner-contato">
-        <img class="d-none d-lg-block" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_contato_desktop']; ?>'>
-        <img class="d-block d-lg-none" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_contato_mobile']; ?>'>
+        <img class="d-none d-lg-block" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_contato_desktop']; ?>' alt='Banner da página de contato'>
+        <img class="d-block d-lg-none" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_contato_mobile']; ?>' alt='Banner da página de contato no mobile'>
     </div>
 
     <div id="contatos" class="ps-0 ps-lg-5 pt-5">

@@ -16,6 +16,16 @@
     if ($id && $idArea) {
         $projeto = AreaAtuacaoRepository::getProjeto($id);
         $areaProjeto = AreaAtuacaoRepository::getAreaAtuacao($idArea);
+
+        $nomeProjetoSeo = $projeto['identificador'] ?? null;
+        if (!$nomeProjetoSeo || trim($nomeProjetoSeo) === '') {
+            $nomeProjetoSeo = 'Projeto '.$id;
+        }
+
+        $seo_title = $nomeProjetoSeo.' | '.$areaProjeto['titulo'].' em Passo Fundo RS | Vittà Construtora';
+        $seo_description = 'Veja detalhes do '.$nomeProjetoSeo.', obra da Vittà Construtora em '.$areaProjeto['titulo'].' com foco em qualidade e execução em Passo Fundo RS.';
+        $seo_h1 = $nomeProjetoSeo.' - '.$areaProjeto['titulo'].' em Passo Fundo RS';
+        $canonical_url = rtrim($base_url, '/').'/projeto.php?id='.$id.'&area='.$idArea;
     } else {
         header('Location:' . $base_url . 'index.php');
         exit;
@@ -30,6 +40,7 @@
 
 </head>
 <body>
+    <h1 class="d-none"><?= $seo_h1 ?? 'Projeto da Vittà Construtora'; ?></h1>
 
     <!-- WPP FLOAT -->
     <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>

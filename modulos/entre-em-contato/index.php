@@ -10,7 +10,7 @@
 
 
 <section class="py-5 px-4 px-lg-0" id="container-entre-em-contato">
-    <h1 class="d-none">Entre em contato</h1>
+    <h2 class="d-none">Entre em contato</h2>
 
 
     <div class="container py-5 mx-auto">

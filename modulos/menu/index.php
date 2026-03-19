@@ -25,7 +25,7 @@
 <!-- mobile -->
 <div id="menu-mobile">
     <div class="bg-white px-4 pt-4 pb-5">
-        <div class="w-100 text-center mb-4"><img onclick="menu()" style="width: 50px;" src='<?= $base_url ?>assets/imagens/site/close.png'></div>
+        <div class="w-100 text-center mb-4"><img onclick="menu()" style="width: 50px;" src='<?= $base_url ?>assets/imagens/site/close.png' alt='Fechar menu'></div>
         
         <nav class="d-flex flex-column justify-content-center align-items-start">
             <a href="<?= $base_url; ?>index.php" class="mb-4 fs-5 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
@@ -34,7 +34,7 @@
             <a href="<?= $base_url; ?>depoimentos.php" class="mb-4 fs-5 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
             <a href="<?= $base_url; ?>contato.php" class="mb-4 fs-5 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
             
-            <a href="<?= $contatos['instagram']; ?>" target="_blank" class="mt-3"><img style="width: 35px;" src='<?= $base_url ?>assets/imagens/site/insta-menu.png'></a>
+            <a href="<?= $contatos['instagram']; ?>" target="_blank" class="mt-3"><img style="width: 35px;" src='<?= $base_url ?>assets/imagens/site/insta-menu.png' alt='Instagram da Vittà Construtora'></a>
         </nav>
     </div>
 </div>
@@ -44,7 +44,7 @@
 
 <!-- desktop -->
 <div class="px-4 px-lg-0 container mx-auto d-flex justify-content-between align-items-center py-4 py-lg-4 py-xxl-5">
-    <a href="<?= $base_url; ?>"><img src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='logo' class='logo-menu'></a>
+    <a href="<?= $base_url; ?>"><img src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='Logo Vittà Construtora' class='logo-menu'></a>
 
     <nav class="d-none d-lg-flex justify-content-center align-items-center">
         <a href="<?= $base_url; ?>index.php" class="mx-4 <?= $linkAtivoIndex ? 'active-link' : 'text-black-2' ?>">Home</a>
@@ -53,10 +53,10 @@
         <a href="<?= $base_url; ?>depoimentos.php" class="mx-4 <?= $linkAtivoDepoimentos ? 'active-link' : 'text-black-2' ?>">Depoimentos</a>
         <a href="<?= $base_url; ?>contato.php" class="mx-4 <?= $linkAtivoContato ? 'active-link' : 'text-black-2' ?>">Contato</a>
 
-        <a href="<?= $contatos['instagram']; ?>" target="_blank" class="ms-4"><img style="width: 20px;" src='<?= $base_url ?>assets/imagens/site/insta-menu.png'></a>
+        <a href="<?= $contatos['instagram']; ?>" target="_blank" class="ms-4"><img style="width: 20px;" src='<?= $base_url ?>assets/imagens/site/insta-menu.png' alt='Instagram da Vittà Construtora'></a>
     </nav>
 
-    <img onclick="menu()" style="width: 35px;" class="d-block d-lg-none" src='<?= $base_url ?>assets/imagens/site/toggler.png'>
+    <img onclick="menu()" style="width: 35px;" class="d-block d-lg-none" src='<?= $base_url ?>assets/imagens/site/toggler.png' alt='Abrir menu'>
 </div>
 <!-- desktop -->
 

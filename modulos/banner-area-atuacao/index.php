@@ -23,5 +23,5 @@
 </style>
 
 <section id="banner-site">
-    <img class="w-100" src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area_atuacao['banner']; ?>'>
+    <img class="w-100" src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area_atuacao['banner']; ?>' alt='Banner da área de atuação <?= $area_atuacao['titulo']; ?>'>
 </section>

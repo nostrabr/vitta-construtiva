@@ -2,14 +2,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="<?= $meta_robots ?? 'index, follow'; ?>">
+    <link rel="canonical" href="<?= $canonical_url ?? $base_url; ?>">
+
     <meta property="og:type" content="website">
     <meta property="og:image" content="<?= $base_url; ?>assets/imagens/site/thumb.png">
     <meta property="og:image:width" content="310">
     <meta property="og:image:height" content="310">
-    <meta property="og:url" content="<?= $base_url; ?>">
-    <meta property="og:title" content="<?= $titulo_site; ?>">
-    <meta name="description" content="<?= $descricao_site; ?>">
-    <meta property="og:description" content="<?= $descricao_site; ?>">
+    <meta property="og:url" content="<?= $canonical_url ?? $base_url; ?>">
+    <meta property="og:title" content="<?= $seo_title ?? $pagAtual ?? $titulo_site; ?>">
+    <meta name="description" content="<?= $seo_description ?? $descricao_site; ?>">
+    <meta property="og:description" content="<?= $seo_description ?? $descricao_site; ?>">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,4 +52,19 @@
     <link rel="stylesheet" href="<?= $base_url; ?>assets/css/style.css">
 
 
-    <title><?= $pagAtual; ?></title>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ConstructionCompany",
+            "name": "Vittà Construtora",
+            "url": "<?= rtrim($base_url, '/'); ?>",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Passo Fundo",
+                "addressRegion": "RS",
+                "addressCountry": "BR"
+            }
+        }
+        </script>
+
+        <title><?= $seo_title ?? $pagAtual; ?></title>

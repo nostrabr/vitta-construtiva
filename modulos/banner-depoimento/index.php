@@ -23,6 +23,6 @@
 </style>
 
 <section id="banner-site">
-    <img class="w-100 d-none d-lg-block" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_depoimentos_desktop']; ?>'>
-    <img class="w-100 d-block d-lg-none" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_depoimentos_mobile']; ?>'>
+    <img class="w-100 d-none d-lg-block" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_depoimentos_desktop']; ?>' alt='Banner da página de depoimentos'>
+    <img class="w-100 d-block d-lg-none" src='<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $banners['banner_depoimentos_mobile']; ?>' alt='Banner da página de depoimentos no mobile'>
 </section>

@@ -37,7 +37,7 @@
 
 
 <section class="py-5 px-4 px-lg-0">
-    <h1 class="d-none">Depoimentos</h1>
+    <h2 class="d-none">Depoimentos</h2>
 
 
     <div class="container mx-auto py-5">
@@ -51,14 +51,14 @@
                 <div <?= $anima_scroll; ?> class="col-12 col-lg-6 mb-3 px-2">
                     <div style="background-color: #BD937A;" class="container-depoimento px-4 d-flex flex-column justify-content-center">
                         <div class="mt-4 d-flex justify-content-start align-items-center">
-                            <div class="foto-perfil me-3"><img src='<?= $base_url ?>admin/assets/imagens/arquivos/depoimentos/<?= $depo['foto']; ?>'></div>
+                            <div class="foto-perfil me-3"><img src='<?= $base_url ?>admin/assets/imagens/arquivos/depoimentos/<?= $depo['foto']; ?>' alt='Foto de <?= $depo['nome']; ?>'></div>
                             <div>
                                 <h6 class="fw-semibold mb-0" style="color: #110F0A;"><?= $depo['nome']; ?></h6>
                                 <p style="color: #110F0A;" class="small"><?= $depo['empresa']; ?></p>
                             </div>
                         </div>
                         <p class="mb-4 fst-italic fw-normal mt-4 font-antic-didone" style="color: #110F0A;"><?= $depo['texto']; ?></p>
-                        <img style="width: 3em;" src='<?= $base_url ?>assets/imagens/site/aspas.png'>
+                        <img style="width: 3em;" src='<?= $base_url ?>assets/imagens/site/aspas.png' alt='Ícone de aspas do depoimento'>
                     </div>
                 </div>
             <?php }else{ ?>

@@ -9,12 +9,12 @@ $dotenv->load();
 require __DIR__.'/db.php';
 
 
-// **********PEGANDO A PÁG ATUAL**********
-include_once  __DIR__ .'/getUrl.php';
-
-
 // **********BASE URL GERAL**********
 $base_url = $_ENV['BASE_URL'];
+
+
+// **********PEGANDO A PÁG ATUAL**********
+include_once  __DIR__ .'/getUrl.php';
 
 
 // **********CONTET METATAGS**********

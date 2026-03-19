@@ -26,6 +26,7 @@
 
 </head>
 <body>
+    <h1 class="d-none"><?= $seo_h1 ?? 'Depoimentos de clientes da Vittà Construtora'; ?></h1>
 
     <!-- WPP FLOAT -->
     <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>

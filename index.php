@@ -30,6 +30,7 @@
 
 </head>
 <body>
+    <h1 class="d-none"><?= $seo_h1 ?? 'Construtora em Passo Fundo RS'; ?></h1>
 
     <!-- WPP FLOAT -->
     <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>

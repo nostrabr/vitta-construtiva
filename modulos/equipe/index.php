@@ -26,7 +26,7 @@
 
 
 <section style="border-bottom: 2px solid #BD937A;" class="py-5 px-4 px-lg-0">
-    <h1 class="d-none">Nossa equipe</h1>
+    <h2 class="d-none">Nossa equipe</h2>
 
 
     <div style="color: #3C3C3B;" class="container mx-auto py-5">
@@ -36,7 +36,7 @@
             <div class="row mb-5 pb-4">
                 <div <?= $anima_scroll; ?> class="col12 col-lg-3 mb-4 mb-lg-0">
                     <div class="container-imagem-membro">
-                        <img src='<?= $base_url ?>admin/assets/imagens/arquivos/equipe/<?= $eq['foto']; ?>'>
+                        <img src='<?= $base_url ?>admin/assets/imagens/arquivos/equipe/<?= $eq['foto']; ?>' alt='Foto de <?= $eq['nome']; ?>'>
                     </div>
                 </div>
 

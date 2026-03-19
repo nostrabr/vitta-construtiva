@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Areas privadas/sensiveis
+Disallow: /admin/
+Disallow: /backups/
+Disallow: /vendor/
+Disallow: /config/
+Disallow: /db/
+
+Sitemap: https://construtoravitta.com/sitemap.xml

@@ -23,5 +23,5 @@
 </style>
 
 <section id="banner-site">
-    <img class="w-100" src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['banner_projeto']; ?>'>
+    <img class="w-100" src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $projeto['banner_projeto']; ?>' alt='Banner do projeto selecionado'>
 </section>

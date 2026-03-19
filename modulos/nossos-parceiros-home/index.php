@@ -72,7 +72,7 @@
                 <?php foreach ($parceiros as $key => $parceiro) { ?>
                     <div class="col-12 col-lg-2 px-1 px-lg-3">
                         <div class="conatiner-logo-parceiro">
-                            <img class="logo" src="<?= $base_url; ?>admin/assets/imagens/arquivos/parceiros/<?= $parceiro['logo']; ?>" alt="Logo">
+                            <img class="logo" src="<?= $base_url; ?>admin/assets/imagens/arquivos/parceiros/<?= $parceiro['logo']; ?>" alt="Logo do parceiro <?= $parceiro['nome']; ?>">
                         </div>
                     </div>
                 <?php } ?>

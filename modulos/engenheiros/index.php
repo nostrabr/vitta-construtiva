@@ -91,7 +91,7 @@
 
 
 <section class="py-5">
-    <h1 class="d-none">Nossos engenheiros</h1>
+    <h2 class="d-none">Nossos engenheiros</h2>
 
 
     <div style="color: #3C3C3B;" class="container mx-auto py-5">
@@ -106,7 +106,7 @@
                         <div class="swiper-slide">
                             <div class="container-engenheiro">
                                 <div class="mb-3 container-fot-engenheiro">
-                                    <img src='<?= $base_url ?>admin/assets/imagens/arquivos/engenheiros/<?= $eng['foto']; ?>'>
+                                    <img src='<?= $base_url ?>admin/assets/imagens/arquivos/engenheiros/<?= $eng['foto']; ?>' alt='Foto de <?= $eng['nome']; ?>'>
                                 </div>
                                 <h5 class="fw-semibold mb-1" style="color: #BD937A;"><?= $eng['nome']; ?></h5>
                                 <p class="small" style="color: #3C3C3B;"><?= $eng['cargo']; ?></p>

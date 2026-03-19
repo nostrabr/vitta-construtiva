@@ -78,10 +78,10 @@
 
 
 <section class="py-5 px-4 px-lg-0">
-    <h1 class="d-none">Áreas de atuação</h1>
+    <h2 class="d-none">Áreas de atuação</h2>
 
     <div class="container-areas mx-auto pt-5 pb-1 pt-lg-5 pb-lg-5">
-        <div class="text-center"><img id="logo-area-atuacao" src='<?= $base_url ?>assets/imagens/site/logo-area-atuacao.png'></div>
+        <div class="text-center"><img id="logo-area-atuacao" src='<?= $base_url ?>assets/imagens/site/logo-area-atuacao.png' alt='Logo da seção áreas de atuação'></div>
 
         <h6 <?= $anima_scroll; ?> class="fw-normal sub-title-area-home text-center mb-4">Conheça nossa <strong>área de atuação</strong></h6>
         
@@ -91,7 +91,7 @@
                     <div onmouseleave="addBg('<?= $area['id']; ?>')" onmouseover="removerBg('<?= $area['id']; ?>')" style="background-image: url('<?= $base_url; ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area['capa']; ?>');" class="container-capa-area">
                         <div id="item-area-home-<?= $area['id']; ?>" class="bg-opacity w-100 position-relative h-100 d-flex align-items-center justify-content-center">
                             <h2 class="text-white text-center"><?= $area['titulo']; ?></h2>
-                            <img class="marca-dagua-area-home" src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area['marca_dagua']; ?>'>
+                            <img class="marca-dagua-area-home" src='<?= $base_url ?>admin/assets/imagens/arquivos/areas-atuacao/<?= $area['marca_dagua']; ?>' alt='Marca de <?= $area['titulo']; ?>'>
                         </div>
                     </div>
                 </div>    
