@@ -13,6 +13,8 @@
 
 <p class="mb-5 small">Nesta sessão você pode atualizar os <strong>dados</strong> de <strong>contatos</strong> e <strong>endereço</strong> do seu site!</p>
 
+<iframe src="<?= $base_url; ?>modulos-admin/contents/dashboard/analytics/analytics.php" frameborder="0" style="height: 600px; overflow-y: auto;" class="w-100 mb-5"></iframe>
+
 <!-- contatos e redes sociais -->
 <form onsubmit="loading()" action="modulos-admin/contents/dashboard/php/atualizar-contatos.php" method="post" class="row mb-5 pb-5 border-bottom">
     <div class="mb-4 col-12 col-lg-6">

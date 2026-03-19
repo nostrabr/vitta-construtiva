@@ -1,0 +1,10 @@
+{
+    "name": "analytics-exemplo/google-analytics-dashboard",
+    "description": "Dashboard de Analytics integrado com Google Analytics API",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "google/analytics-data": "^0.17",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

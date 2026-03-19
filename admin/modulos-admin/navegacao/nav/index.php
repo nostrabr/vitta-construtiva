@@ -17,7 +17,7 @@
 
     // Devolve o nome da página atual
     if(strpos($urlAtual, 'dashboard') !== false){
-        $tituloContentPagina = "Contatos";
+        $tituloContentPagina = "Dashboard";
         $activeDashboard = true;
     }else if(strpos($urlAtual, 'banners') !== false){
         $tituloContentPagina = "Banners";
@@ -50,7 +50,7 @@
 
 
 <nav class="d-flex flex-column w-100 mt-5 pt-5 mt-lg-0 pt-lg-0">
-    <a href="dashboard.php" class="link-nav-desktop <?= $activeDashboard ? 'active-link-desktop' : ''; ?>">Contatos</a>
+    <a href="dashboard.php" class="link-nav-desktop <?= $activeDashboard ? 'active-link-desktop' : ''; ?>">Dashboard</a>
     <a href="banners.php" class="link-nav-desktop <?= $activeBanners ? 'active-link-desktop' : ''; ?>">Banners</a>
     <a href="areas-atuacao.php" class="link-nav-desktop <?= $activeAreasAtuacao ? 'active-link-desktop' : ''; ?>">Áreas de atuação</a>
     <a href="depoimentos.php" class="link-nav-desktop <?= $activeDepoimentos ? 'active-link-desktop' : ''; ?>">Depoimentos</a>
