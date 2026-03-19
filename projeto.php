@@ -22,8 +22,8 @@
             $nomeProjetoSeo = 'Projeto '.$id;
         }
 
-        $seo_title = $nomeProjetoSeo.' | '.$areaProjeto['titulo'].' em Passo Fundo RS | Vittà Construtora';
-        $seo_description = 'Veja detalhes do '.$nomeProjetoSeo.', obra da Vittà Construtora em '.$areaProjeto['titulo'].' com foco em qualidade e execução em Passo Fundo RS.';
+        $seo_title = $nomeProjetoSeo.' | '.$areaProjeto['titulo'].' em Passo Fundo RS | Construtora Vittá';
+        $seo_description = 'Veja detalhes do '.$nomeProjetoSeo.', obra da Construtora Vittá em '.$areaProjeto['titulo'].' com foco em qualidade e execução em Passo Fundo RS.';
         $seo_h1 = $nomeProjetoSeo.' - '.$areaProjeto['titulo'].' em Passo Fundo RS';
         $canonical_url = rtrim($base_url, '/').'/projetos/'.$idArea.'/'.$id;
     } else {
@@ -40,7 +40,7 @@
 
 </head>
 <body>
-    <h1 class="d-none"><?= $seo_h1 ?? 'Projeto da Vittà Construtora'; ?></h1>
+    <h1 class="d-none"><?= $seo_h1 ?? 'Projeto da Construtora Vittá'; ?></h1>
 
     <!-- WPP FLOAT -->
     <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>

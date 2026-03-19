@@ -56,7 +56,7 @@
         {
             "@context": "https://schema.org",
             "@type": "ConstructionCompany",
-            "name": "Vittà Construtora",
+            "name": "Construtora Vittá",
             "url": "<?= rtrim($base_url, '/'); ?>",
             "address": {
                 "@type": "PostalAddress",

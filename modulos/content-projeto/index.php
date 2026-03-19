@@ -138,7 +138,7 @@
     <h2 class="d-none">Nossos projetos</h2>
 
     <div class="container-sobre-projeto mx-auto py-5 text-center">
-        <img <?= $anima_scroll; ?> style="width: 9em;" src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='Logo Vittà Construtora'>
+        <img <?= $anima_scroll; ?> style="width: 9em;" src='<?= $base_url ?>assets/imagens/site/logo-menu.png' alt='Logo Construtora Vittá'>
 
         <div style="background-color: #54565A;" class="w-100 px-lg-5">
             <div class="mt-5 rounded px-4 px-lg-5 py-5 row mx-0 mx-lg-5">
